@@ -57,7 +57,7 @@ html {
 }
 
 body {
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), sans-serif;
     background-color: var(--color-bg-clean);
     color: var(--color-primary-navy);
     line-height: 1.6;
@@ -121,7 +121,7 @@ img { max-width: 100%; display: block; }
 
 .text-center { text-align: center; }
 .text-caption { font-size: 0.8125rem; color: var(--color-text-muted); }
-.text-mono { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-secondary-slate); }
+.text-mono { font-family: var(--font-mono), monospace;; font-size: 0.85rem; color: var(--color-secondary-slate); }
 .text-success { color: var(--color-semantic-green); font-weight: 600; }
 
 /* Badges y Chips */
@@ -202,7 +202,7 @@ img { max-width: 100%; display: block; }
 
 .btn-outline {
     background: transparent;
-    border: 1.5px solid var(--color-primary-navy);
+    border: 2px solid var(--color-primary-navy);
     color: var(--color-primary-navy);
 }
 
@@ -764,7 +764,7 @@ input:checked + .slider:before { transform: translateX(24px); }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), sans-serif;
     font-size: 1.0625rem;
     font-weight: 600;
     color: var(--color-primary-navy);
@@ -906,7 +906,7 @@ input:checked + .slider:before { transform: translateX(24px); }
     padding: 0.75rem 1rem;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), sans-serif;
     font-size: 0.9375rem;
     transition: all var(--transition-fast);
 }
