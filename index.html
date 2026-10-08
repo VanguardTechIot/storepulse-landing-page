@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StorePulse | El pulso inteligente y seguro de tu galería comercial</title>
+
+    <!-- SEO & Metadatos Canónicos -->
+    <meta name="description" content="Plataforma IoT de supervisión perimetral, detección temprana de incendios y sub-medición justa de luz y agua para galerías comerciales urbanas por VanguardTech.">
+    <meta name="keywords" content="IoT, galería comercial, submedición, PZEM-004T, detección de humo, ESP32, seguridad perimetral, telemetría comercial, VanguardTech, StorePulse">
+    <meta name="author" content="VanguardTech">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="StorePulse | Telemetría y Seguridad IoT para Galerías Comerciales">
+    <meta property="og:description" content="Monitoreo continuo en tiempo real: erradica disputas de servicios básicos y protege cada local frente a intrusiones e incendios.">
+    <meta property="og:image" content="assets/branding/storepulse-preview.png">
+    <meta property="og:url" content="https://storepulse.vanguardtech.pe/">
+
+    <!-- Tipografía Oficial: Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230EA5E9'><path d='M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z'/></svg>">
+</head>
+<body>
+
+<!-- ========================================================================= -->
+<!-- 1. HEADER / NAVBAR STICKY (VS-01, VS-06)                                   -->
+<!-- ========================================================================= -->
+<header class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#inicio" class="nav-brand">
+            <!-- Logotipo SVG integrado -->
+            <svg class="brand-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="36" height="36" rx="8" fill="#0F172A"/>
+                <path d="M7 20L12 20L15 13L18 25L22 17L25 20L29 20" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="18" cy="25" r="2" fill="#10B981"/>
+            </svg>
+            <span class="brand-text">Store<span class="brand-accent">Pulse</span></span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                <li><a href="#como-funciona" class="nav-link">Cómo Funciona</a></li>
+                <li><a href="#planes" class="nav-link">Planes</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#equipo" class="nav-link">Equipo</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#login" class="btn-text">Iniciar Sesión</a>
+                <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+            </div>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- ========================================================================= -->
+    <!-- 2. HERO SECTION / PROPUESTA DE VALOR (VS-01)                              -->
+    <!-- ========================================================================= -->
+    <section class="hero-section" id="inicio">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge badge-accent">
+                    <span class="status-indicator status-green"></span>
+                    Ecosistema IoT para Galerías Comerciales
+                </div>
+                <h1 class="hero-title">
+                    El pulso inteligente y <span class="highlight">seguro</span> de tu galería comercial
+                </h1>
+                <p class="hero-description">
+                    Monitoreo en tiempo real de seguridad perimetral, detección temprana de incendios y sub-medición exacta de agua y electricidad por local comercial. Elimina el prorrateo conflictivo y gestiona emergencias con telemetría en el Edge.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#contacto" class="btn btn-primary btn-lg">Comenzar ahora &rarr;</a>
+                    <a href="#como-funciona" class="btn btn-secondary btn-lg">Ver demostración</a>
+                </div>
+
+                <div class="hero-proof">
+                    <div class="proof-metric">
+                        <span class="proof-number">&lt; 2 s</span>
+                        <span class="proof-label">Tiempo de alerta crítica</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-metric">
+                        <span class="proof-number">100%</span>
+                        <span class="proof-label">Consumo individualizado</span>
+                    </div>
+                    <div class="proof-divider"></div>
+                    <div class="proof-metric">
+                        <span class="proof-number">24/7</span>
+                        <span class="proof-label">Operación local offline</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="telemetry-card-glass">
+                    <div class="glass-header">
+                        <div class="gallery-badge">
+                            <span class="gallery-icon">&#127970;</span>
+                            <div>
+                                <strong>Galería Central Polvos Azules</strong>
+                                <span class="text-caption">Sector Calzado &bull; Nivel 1</span>
+                            </div>
+                        </div>
+                        <span class="badge-status badge-success">En línea &bull; Normal</span>
+                    </div>
+
+                    <!-- Panel de telemetría simulada en tiempo real -->
+                    <div class="telemetry-widgets">
+                        <div class="widget-metric">
+                            <span class="widget-title">ENERGÍA ACTIVA (PZEM-004T)</span>
+                            <div class="metric-value">42.8 <span class="metric-unit">kWh</span></div>
+                            <div class="metric-progress-bar">
+                                <div class="metric-progress-fill" style="width: 65%;"></div>
+                            </div>
+                            <div class="widget-footer">
+                                <span class="text-caption text-success">&uarr; Normal vs. Línea base</span>
+                                <span class="text-mono">220.4 V</span>
+                            </div>
+                        </div>
+
+                        <div class="widget-metric">
+                            <span class="widget-title">CONSUMO DE AGUA (YF-S201)</span>
+                            <div class="metric-value">1,240 <span class="metric-unit">Litros</span></div>
+                            <div class="metric-progress-bar">
+                                <div class="metric-progress-fill fill-cyan" style="width: 40%;"></div>
+                            </div>
+                            <div class="widget-footer">
+                                <span class="text-caption">0 fugas nocturnas</span>
+                                <span class="text-mono">1.2 LPM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="security-strip">
+                        <div class="sensor-pill">
+                            <span class="status-dot dot-green"></span>
+                            <span>Cortina Metálica: <strong>Cerrada</strong></span>
+                        </div>
+                        <div class="sensor-pill">
+                            <span class="status-dot dot-green"></span>
+                            <span>Sensor Humo MQ-2: <strong>Limpio</strong></span>
+                        </div>
+                        <div class="sensor-pill">
+                            <span class="status-dot dot-green"></span>
+                            <span>Modo Red: <strong>Edge Gateway</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 3. WHAT WE OFFER / SOLUCIONES IOT (VS-01)                                 -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="servicios">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">Soluciones Integrales</span>
+                <h2 class="section-title">Tecnología de precisión para recintos comerciales</h2>
+                <p class="section-subtitle">
+                    Arquitectura articulada entre nodos sensores en locales, pasarelas locales Edge y plataformas en la nube.
+                </p>
+            </div>
+
+            <div class="grid-cards-4">
+                <article class="service-card">
+                    <div class="card-icon-wrapper icon-cyan">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="card-title">Seguridad Perimetral IoT</h3>
+                    <p class="card-text">
+                        Sensores magnéticos de apertura en cortinas metálicas y detección de movimiento PIR fuera del horario comercial, activando protocolos inmediatos.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon-wrapper icon-red">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                    </div>
+                    <h3 class="card-title">Detección de Humo & Fuego</h3>
+                    <p class="card-text">
+                        Monitoreo químico de gases y concentración de humo mediante sensores MQ-2 calibrados para suprimir falsos positivos y actuar antes de siniestros.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon-wrapper icon-amber">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    </div>
+                    <h3 class="card-title">Sub-medición Eléctrica</h3>
+                    <p class="card-text">
+                        Medidores PZEM-004T con transformador de corriente no invasivo. Registra voltaje, factor de potencia y kWh exactos consumidos en cada tienda.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-icon-wrapper icon-blue">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    </div>
+                    <h3 class="card-title">Telemetría de Agua Potable</h3>
+                    <p class="card-text">
+                        Caudalímetros de efecto Hall YF-S201 con detección de fugas nocturnas por goteo y lectura precisa en litros para eliminar el cobro por prorrateo.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 4. BENEFICIOS SEGÚN SEGMENTO (VS-02)                                      -->
+    <!-- ========================================================================= -->
+    <section class="section" id="beneficios">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">Propuesta de Valor Diferenciada</span>
+                <h2 class="section-title">Beneficios hechos a la medida de tu rol</h2>
+                <p class="section-subtitle">
+                    Resolvemos las fricciones históricas entre la junta directiva y los comerciantes arrendatarios.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <!-- Segmento 1: Administradores -->
+                <div class="benefit-box">
+                    <div class="benefit-header">
+                        <span class="role-badge">Para Administradores de Galerías</span>
+                        <h3>Control operativo y finanzas transparentes</h3>
+                    </div>
+                    <ul class="benefit-list">
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Liquidación automatizada de recibos:</strong> Emite liquidaciones mensuales sin necesidad de lecturas manuales en pizarras o libretas.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Eliminación de disputas por prorrateo:</strong> Cada comerciante paga exactamente lo que marca su medidor verificado.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Supervisión de guardias y rondas:</strong> Registro con timestamp verificable de verificaciones físicas de alertas en pasillos.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Reducción de primas de seguro:</strong> Infraestructura de mitigación de incendios auditable y certificable.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Segmento 2: Inquilinos -->
+                <div class="benefit-box">
+                    <div class="benefit-header">
+                        <span class="role-badge">Para Inquilinos y Comerciantes</span>
+                        <h3>Paz mental y cobros estrictamente justos</h3>
+                    </div>
+                    <ul class="benefit-list">
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Acceso móvil 24/7 a su local:</strong> Revisa desde tu celular si tu cortina quedó bien cerrada o si hay corte eléctrico.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Cero subsidio de consumos ajenos:</strong> Si tu tienda de ropa no usa agua ni refrigeración, tu factura mensual lo refleja.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Alerta de intrusión en &lt; 2 segundos:</strong> Notificación push crítica inmediata mientras se despacha al personal de seguridad.
+                            </div>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <div>
+                                <strong>Historial de consumo auditable:</strong> Gráficas comparativas por mes que sustentan cada centavo de tus servicios.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 5. CÓMO FUNCIONA / FLUJO DE LA SOLUCIÓN (VS-03)                            -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="como-funciona">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">Flujo Operativo</span>
+                <h2 class="section-title">De la señal física a tu pantalla en 3 pasos</h2>
+                <p class="section-subtitle">
+                    Arquitectura de hardware distribuido y telemetría edge diseñada para operar incluso sin conexión a internet.
+                </p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-badge">1</div>
+                    <div class="step-icon">&#128225;</div>
+                    <h3 class="step-title">Instalación No Invasiva</h3>
+                    <p class="step-text">
+                        Nodos ESP32 equipados con sensores magnéticos, MQ-2, PZEM-004T y YF-S201 instalados en cada local sin necesidad de costosas obras civiles ni perforaciones estructurales.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">2</div>
+                    <div class="step-icon">&#9881;</div>
+                    <h3 class="step-title">Edge Gateway & LittleFS</h3>
+                    <p class="step-text">
+                        Los datos se consolidan localmente en la pasarela de la galería. Si la conexión a internet cae, los eventos y consumos se protegen en la memoria flash local para sincronización posterior.
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">3</div>
+                    <div class="step-icon">&#128241;</div>
+                    <h3 class="step-title">Gestión Web & App Móvil</h3>
+                    <p class="step-text">
+                        Los administradores liquidan recibos y supervisan alertas desde el panel web, mientras los inquilinos y guardias reciben notificaciones push y consultan telemetría en la app móvil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 6. PLANES DE SUSCRIPCIÓN / PRICING TABLE (VS-04)                          -->
+    <!-- ========================================================================= -->
+    <section class="section" id="planes">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">Planes Flexibles</span>
+                <h2 class="section-title">Precios adaptados a las dimensiones de tu galería</h2>
+                <p class="section-subtitle">
+                    Elige el plan SaaS que mejor se adapte a tu número de locales comerciales monitoreados.
+                </p>
+
+                <!-- Toggle Mensual / Anual -->
+                <div class="billing-toggle-container">
+                    <span class="billing-option" id="labelMonthly">Facturación Mensual</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="billing-option" id="labelAnnual">
+              Facturación Anual <span class="badge-discount">Ahorra 20%</span>
+            </span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan Básico -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Plan Básico</h3>
+                        <p class="plan-desc">Ideal para galerías pequeñas o pasajes comerciales de hasta 15 locales.</p>
+                        <div class="price-box">
+                            <span class="currency">S/</span>
+                            <span class="price-value" data-monthly="149" data-annual="119">149</span>
+                            <span class="period">/ mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Hasta 15 locales comerciales</li>
+                        <li>Monitoreo de energía y agua</li>
+                        <li>Detección básica de humo</li>
+                        <li>App móvil para inquilinos</li>
+                        <li>Soporte técnico por correo</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline btn-block">Seleccionar Plan</a>
+                </div>
+
+                <!-- Plan Comercial (Destacado) -->
+                <div class="pricing-card pricing-featured">
+                    <div class="featured-ribbon">Más Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Plan Comercial</h3>
+                        <p class="plan-desc">La solución estándar para galerías medianas de hasta 50 locales.</p>
+                        <div class="price-box">
+                            <span class="currency">S/</span>
+                            <span class="price-value" data-monthly="349" data-annual="279">349</span>
+                            <span class="period">/ mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Hasta 50 locales comerciales</li>
+                        <li>Seguridad perimetral + Humo MQ-2</li>
+                        <li>Liquidación de recibos PDF automática</li>
+                        <li>Módulo de rondas para guardias</li>
+                        <li>Respaldo offline LittleFS activado</li>
+                        <li>Soporte prioritario 24/7</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary btn-block">Comenzar Ahora</a>
+                </div>
+
+                <!-- Plan Corporativo -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Plan Corporativo</h3>
+                        <p class="plan-desc">Para grandes conglomerados comerciales o cadenas de galerías urbanas.</p>
+                        <div class="price-box">
+                            <span class="currency">S/</span>
+                            <span class="price-value" data-monthly="699" data-annual="559">699</span>
+                            <span class="period">/ mes</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Locales comerciales ilimitados</li>
+                        <li>Múltiples pasarelas Edge Gateways</li>
+                        <li>Integración API con sistemas contables</li>
+                        <li>Gestor de cuenta dedicado</li>
+                        <li>Capacitación presencial al personal</li>
+                        <li>SLA garantizado de 99.9%</li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-outline btn-block">Contactar Ventas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 7. PREGUNTAS FRECUENTES / FAQ ACCORDION (VS-05)                           -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="faq">
+        <div class="container container-narrow">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">Preguntas Frecuentes</span>
+                <h2 class="section-title">Respuestas claras a tus dudas sobre StorePulse</h2>
+                <p class="section-subtitle">
+                    Todo lo que necesitas saber antes de modernizar tu galería comercial.
+                </p>
+            </div>
+
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Es necesario realizar obras civiles o picar paredes para instalar los medidores?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. Los medidores eléctricos PZEM-004T utilizan transformadores de corriente de núcleo dividido tipo gancho no invasivo, los cuales se abrazan al alimentador principal de cada tablero sin interrumpir el cableado existente. Los caudalímetros de agua se instalan en las llaves de paso con adaptadores rápidos estándar.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué ocurre si la galería se queda sin internet o sin energía eléctrica?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El sistema cuenta con resiliencia de hardware de dos niveles: 1) Cada nodo IoT incorpora una batería de respaldo 18650 para mantener la supervisión de intrusión y humo durante cortes de luz. 2) Ante la pérdida de internet, el sistema almacena todos los eventos y mediciones en la memoria flash local (LittleFS), sincronizándose automáticamente al restablecerse el enlace.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo se calculan y entregan los recibos a los comerciantes inquilinos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El sistema multiplica la lectura acumulada en kWh y litros por la tarifa oficial configurada por la administración. Cada fin de ciclo, genera automáticamente recibos en PDF individuales con desglose cuantitativo y gráfico, los cuales llegan directamente a la app móvil del comerciante.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué tan rápido reciben los inquilinos y guardias una alerta de intrusión o humo?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Las alertas de emergencia tienen máxima prioridad semántica. El procesamiento en el Edge Gateway dispara la notificación push crítica hacia los teléfonos de los vigilantes y del dueño del local en menos de dos segundos (&lt; 2 s), activando un banner persistente y vibración acústica continua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 8. SOBRE NOSOTROS Y NUESTRO EQUIPO (VS-07)                                 -->
+    <!-- ========================================================================= -->
+    <section class="section" id="equipo">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent">VanguardTech</span>
+                <h2 class="section-title">El equipo de ingeniería detrás de StorePulse</h2>
+                <p class="section-subtitle">
+                    Estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC) comprometidos con la transformación tecnológica de los comercios urbanos.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Miembro 1 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/team/renzo-araujo.png" alt="Renzo Araujo Ingunza" onerror="this.src='https://ui-avatars.com/api/?name=Renzo+Araujo&background=0F172A&color=0EA5E9'">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Renzo Araujo Ingunza</h3>
+                        <span class="team-role">Software Architecture & Cloud</span>
+                        <p class="team-bio">Especialista en desarrollo full-stack y arquitectura empresarial. Lidera el despliegue cloud, las pasarelas de integración y el cumplimiento de GitFlow.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/team/sebastian-cordova.jpeg" alt="Sebastián Córdova Valdivia" onerror="this.src='https://ui-avatars.com/api/?name=Sebastian+Cordova&background=0F172A&color=0EA5E9'">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sebastián Córdova Valdivia</h3>
+                        <span class="team-role">Full-Stack & Security Specialist</span>
+                        <p class="team-bio">Enfocado en seguridad informática, diseño centrado en el usuario y ciberseguridad en el Edge, garantizando la robustez ante vulnerabilidades.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/team/angelo-curi.png" alt="Angelo Curi Marcelo" onerror="this.src='https://ui-avatars.com/api/?name=Angelo+Curi&background=0F172A&color=0EA5E9'">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Angelo Curi Marcelo</h3>
+                        <span class="team-role">Embedded Systems & C++ Developer</span>
+                        <p class="team-bio">Especialista en programación de microcontroladores ESP32, comunicación UART con medidores PZEM y procesamiento de telemetría de sensores.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/team/henry-diaz.png" alt="Henry Diaz Gutierrez" onerror="this.src='https://ui-avatars.com/api/?name=Henry+Diaz&background=0F172A&color=0EA5E9'">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Henry Diaz Gutierrez</h3>
+                        <span class="team-role">Frontend Web Applications (Angular)</span>
+                        <p class="team-bio">Líder del frontend modular con Angular, responsable de la experiencia de usuario y componentes visuales del panel de administración.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 5 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="assets/team/adrian-quiroz.jpeg" alt="Adrian Quiroz Cáceres" onerror="this.src='https://ui-avatars.com/api/?name=Adrian+Quiroz&background=0F172A&color=0EA5E9'">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Adrian Quiroz Cáceres</h3>
+                        <span class="team-role">Backend Services & Spring Boot</span>
+                        <p class="team-bio">Diseño e implementación de microservicios RESTful, Domain-Driven Design (DDD) y persistencia de telemetría y facturación.</p>
+                    </div>
+                </div>
+
+                <!-- Miembro 6 -->
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://ui-avatars.com/api/?name=Joaquin+Carranza&background=0F172A&color=0EA5E9" alt="Joaquín Carranza Tesén">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Joaquín Carranza Tesén</h3>
+                        <span class="team-role">IoT Integration & QA Engineer</span>
+                        <p class="team-bio">Integración de pasarelas Edge, pruebas de consistencia cross-platform e implementación de componentes interactivos de la solución.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 9. TESTIMONIOS Y FORMULARIO DE CONTACTO / DEMO (VS-06)                    -->
+    <!-- ========================================================================= -->
+    <section class="section section-alt" id="contacto">
+        <div class="container">
+            <div class="cta-contact-wrapper">
+                <div class="cta-info">
+                    <span class="badge badge-accent">Da el siguiente paso</span>
+                    <h2 class="cta-title">Moderniza la seguridad y los servicios de tu galería</h2>
+                    <p class="cta-text">
+                        Agenda una demostración guiada con nuestro equipo técnico. Analizaremos las necesidades particulares de tus locales y te brindaremos un presupuesto a medida sin compromiso.
+                    </p>
+
+                    <div class="quote-card">
+                        <p class="quote-text">
+                            "Antes perdíamos horas discutiendo por el recibo de luz de las máquinas de coser del segundo piso. Con StorePulse cada puesto tiene su telemetría clara y se acabaron las quejas."
+                        </p>
+                        <div class="quote-author">
+                            <strong>Alvaro Quispe</strong>
+                            <span>Administrador &bull; Galería Textil Los Vencedores</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3 class="form-title">Solicitar Demostración</h3>
+                    <form id="demoForm" class="demo-form" novalidate>
+                        <div class="form-group">
+                            <label for="fullName">Nombre y Apellidos *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Ej. Carlos Ramos" required>
+                            <span class="form-error" id="nameError">Por favor ingresa tu nombre.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Corporativo o Personal *</label>
+                            <input type="email" id="email" class="form-control" placeholder="carlos@galeria.pe" required>
+                            <span class="form-error" id="emailError">Ingresa un correo electrónico válido.</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono / WhatsApp *</label>
+                                <input type="tel" id="phone" class="form-control" placeholder="+51 987 654 321" required>
+                                <span class="form-error" id="phoneError">Ingresa un número telefónico.</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="storeCount">Número de Locales</label>
+                                <select id="storeCount" class="form-control">
+                                    <option value="1-15">1 a 15 locales</option>
+                                    <option value="16-50" selected>16 a 50 locales</option>
+                                    <option value="51+">Más de 50 locales</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="galleryName">Nombre de la Galería Comercial *</label>
+                            <input type="text" id="galleryName" class="form-control" placeholder="Ej. Galería Moda Express" required>
+                            <span class="form-error" id="galleryError">Indica el nombre de tu galería.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                            Solicitar Demostración Gratuita &rarr;
+                        </button>
+
+                        <div class="form-success" id="formSuccess">
+                            &#10004; ¡Solicitud recibida! Un especialista de VanguardTech se comunicará contigo en menos de 24 horas.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ========================================================================= -->
+<!-- 10. FOOTER / PIE DE PÁGINA (VS-08, VS-09)                                  -->
+<!-- ========================================================================= -->
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-col footer-brand-col">
+            <a href="#inicio" class="nav-brand footer-logo">
+                <svg class="brand-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="36" height="36" rx="8" fill="#1E293B"/>
+                    <path d="M7 20L12 20L15 13L18 25L22 17L25 20L29 20" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="brand-text">Store<span class="brand-accent">Pulse</span></span>
+            </a>
+            <p class="footer-text">
+                Solución de Internet de las Cosas (IoT) desarrollada por VanguardTech para la supervisión y automatización de galerías comerciales urbanas.
+            </p>
+            <span class="text-caption">Lima, Perú &bull; 2026</span>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-heading">Plataforma</h4>
+            <ul class="footer-links">
+                <li><a href="#servicios">Soluciones IoT</a></li>
+                <li><a href="#beneficios">Beneficios por Rol</a></li>
+                <li><a href="#como-funciona">Arquitectura Edge</a></li>
+                <li><a href="#planes">Planes de Suscripción</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-heading">Acceso</h4>
+            <ul class="footer-links">
+                <li><a href="#login">Iniciar Sesión Web</a></li>
+                <li><a href="#app">Descargar App Móvil</a></li>
+                <li><a href="#contacto">Soporte Técnico</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-heading">Legal</h4>
+            <ul class="footer-links">
+                <li><a href="terms.html">Términos de Servicio (VS-08)</a></li>
+                <li><a href="privacy.html">Política de Privacidad (VS-09)</a></li>
+                <li><a href="#">Declaración de Seguridad IoT</a></li>
+                <li><a href="#">Licencia de Software</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container footer-bottom-flex">
+            <p>&copy; 2026 VanguardTech. Todos los derechos reservados.</p>
+            <p class="text-caption">UPC - Desarrollo de Soluciones IoT (1ASI0572)</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
