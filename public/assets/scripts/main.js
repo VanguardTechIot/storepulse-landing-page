@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (isValid) {
                 submitBtn.disabled = true;
-                submitBtn.textContent = 'Enviando solicitud...';
+                submitBtn.textContent = window.i18n ? window.i18n.t('form.sending') : 'Enviando solicitud...';
 
                 // Simulación de respuesta asíncrona (200 OK)
                 setTimeout(() => {
