@@ -18,8 +18,8 @@
 (function () {
     'use strict';
 
-    const STORAGE_KEY = 'storepulse-lang';
-    const DEFAULT_LANG = 'es';
+    const STORAGE_KEY = 'storepulse.language';
+    const DEFAULT_LANG = 'en';
     const dictionaries = window.STOREPULSE_I18N || {};
     const ATTRIBUTES = ['placeholder', 'aria-label', 'content', 'title'];
 
@@ -82,21 +82,26 @@
         });
     }
 
-    function setLanguage(lang) {
+    function applyLanguage(lang) {
         if (!isSupported(lang)) lang = DEFAULT_LANG;
         currentLang = lang;
         document.documentElement.lang = lang;
         translatePage();
         updateSwitches();
-        saveLang(lang);
         document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
+    }
+
+    /** Cambia el idioma por elección del usuario y lo recuerda. */
+    function setLanguage(lang) {
+        applyLanguage(lang);
+        saveLang(currentLang);
     }
 
     function init() {
         document.querySelectorAll('[data-lang]').forEach((btn) => {
             btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
         });
-        setLanguage(readSavedLang() || DEFAULT_LANG);
+        applyLanguage(readSavedLang() || DEFAULT_LANG);
     }
 
     // API pública para main.js y otras páginas
