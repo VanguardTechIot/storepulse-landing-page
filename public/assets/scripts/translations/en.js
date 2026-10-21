@@ -43,18 +43,17 @@ window.STOREPULSE_I18N.en = {
     "hero.sensorNetwork": "Connection: <strong>Active</strong>",
 
     // services
-    "services.badge": "End-to-End Solutions",
-    "services.title": "Precision technology for commercial spaces",
-    "services.subtitle": "An architecture that connects in-store sensor nodes, local Edge gateways and cloud platforms.",
-    "services.security.title": "IoT Perimeter Security",
-    "services.security.text": "Magnetic opening sensors on metal shutters and PIR motion detection outside business hours, triggering immediate response protocols.",
-    "services.smoke.title": "Smoke & Fire Detection",
-    "services.smoke.text": "Chemical monitoring of gases and smoke concentration with MQ-2 sensors calibrated to suppress false positives and act before an incident occurs.",
-    "services.power.title": "Electricity Sub-metering",
-    "services.power.text": "PZEM-004T meters with a non-invasive current transformer. They record voltage, power factor and the exact kWh consumed by each store.",
-    "services.water.title": "Drinking Water Telemetry",
-    "services.water.text": "YF-S201 Hall-effect flow meters with overnight drip-leak detection and accurate readings in liters to eliminate cost-splitting charges.",
-
+    "services.badge": "What we do",
+    "services.title": "Everything your gallery needs, in one system",
+    "services.subtitle": "We install small devices in every stand that watch, detect and measure for you, and show you everything on your phone or computer.",
+    "services.security.title": "Break-in protection",
+    "services.security.text": "We detect when someone opens a shutter or enters a stand outside business hours, and alert you right away.",
+    "services.smoke.title": "Smoke and fire detection",
+    "services.smoke.text": "We detect smoke from the very first moment so you can act before it becomes a fire, while avoiding false alarms.",
+    "services.power.title": "Electricity metering per stand",
+    "services.power.text": "Each stand gets its own electricity meter, installed without breaking walls or cutting wires. You know exactly how much each one uses.",
+    "services.water.title": "Water metering per stand",
+    "services.water.text": "We measure the water each stand uses and alert you to leaks overnight, so no one pays for someone else's consumption.",
     // benefits
     "benefits.badge": "Differentiated Value Proposition",
     "benefits.title": "Benefits tailored to your role",
@@ -74,15 +73,14 @@ window.STOREPULSE_I18N.en = {
 
     // how
     "how.badge": "How It Works",
-    "how.title": "From physical signal to your screen in 3 steps",
-    "how.subtitle": "A distributed hardware and edge telemetry architecture designed to keep working even without an internet connection.",
-    "how.step1.title": "Non-Invasive Installation",
-    "how.step1.text": "ESP32 nodes equipped with magnetic, MQ-2, PZEM-004T and YF-S201 sensors are installed in each store without costly construction work or structural drilling.",
-    "how.step2.title": "Edge Gateway & LittleFS",
-    "how.step2.text": "Data is consolidated locally on the gallery's gateway. If the internet connection drops, events and consumption readings are kept safe in local flash memory and synchronized later.",
-    "how.step3.title": "Web Management & Mobile App",
-    "how.step3.text": "Administrators issue bills and monitor alerts from the web dashboard, while tenants and guards receive push notifications and check telemetry in the mobile app.",
-
+    "how.title": "Get started in 3 steps",
+    "how.subtitle": "A system built to keep protecting your gallery even if the internet goes down.",
+    "how.step1.title": "Quick, clean installation",
+    "how.step1.text": "We place small devices in every stand to watch doors, detect smoke and measure electricity and water, with no construction or drilling.",
+    "how.step2.title": "Keeps working offline",
+    "how.step2.text": "If the internet drops, the system keeps watching and saves everything that happens. When the connection returns, it updates on its own.",
+    "how.step3.title": "Check it from your phone or computer",
+    "how.step3.text": "The administrator issues bills and reviews alerts on the web, and each tenant gets notifications and sees their usage in the app.",
     // plans
     "plans.badge": "Flexible Plans",
     "plans.title": "Pricing that scales with the size of your gallery",
