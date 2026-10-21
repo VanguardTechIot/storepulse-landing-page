@@ -284,6 +284,67 @@ img { max-width: 100%; display: block; }
     gap: 1rem;
 }
 
+/* Evita que los textos de la barra se partan en dos líneas */
+.nav-link,
+.nav-actions a { white-space: nowrap; }
+
+/* Selector de idioma EN / ES (mismo lenguaje visual que badges y botones) */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.6rem;
+    background-color: var(--color-surface-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-sm);
+}
+
+.lang-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.15rem;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+}
+
+.lang-option {
+    min-width: 2.4rem;
+    padding: 0.35rem 0.7rem;
+    border: none;
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: var(--color-secondary-slate);
+    font-family: var(--font-primary);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.lang-option:hover:not(.active) {
+    color: var(--color-accent-cyan);
+    background-color: rgba(14, 165, 233, 0.08);
+}
+
+.lang-option.active {
+    background-color: var(--color-accent-cyan);
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.35);
+}
+
+.lang-option:focus-visible {
+    outline: 2px solid var(--color-accent-cyan);
+    outline-offset: 2px;
+}
+
+/* Páginas legales: selector arriba a la derecha */
+.lang-switch-page {
+    float: right;
+    margin-bottom: 1rem;
+}
+
 .nav-toggle {
     display: none;
     background: none;
@@ -1072,4 +1133,5 @@ input:checked + .slider:before { transform: translateX(24px); }
         gap: 0.5rem;
         text-align: center;
     }
+    .nav-actions .lang-switch { align-self: center; }
 }
