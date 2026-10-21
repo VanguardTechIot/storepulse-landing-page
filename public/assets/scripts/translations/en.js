@@ -19,7 +19,6 @@ window.STOREPULSE_I18N.en = {
     "nav.team": "Team",
     "nav.login": "Log In",
     "nav.requestDemo": "Request Demo",
-    "nav.webApp": "Web Platform Access",
     "nav.menuAria": "Open navigation menu",
     "nav.langGroup": "Language",
 

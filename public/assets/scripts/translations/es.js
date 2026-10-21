@@ -19,7 +19,6 @@ window.STOREPULSE_I18N.es = {
     "nav.team": "Equipo",
     "nav.login": "Iniciar Sesión",
     "nav.requestDemo": "Solicitar Demo",
-    "nav.webApp": "Acceso a la Plataforma Web",
     "nav.menuAria": "Abrir menú de navegación",
     "nav.langGroup": "Idioma",
 
