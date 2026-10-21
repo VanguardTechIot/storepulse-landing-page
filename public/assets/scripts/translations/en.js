@@ -8,7 +8,7 @@ window.STOREPULSE_I18N = window.STOREPULSE_I18N || {};
 window.STOREPULSE_I18N.en = {
     // meta
     "meta.title": "StorePulse | The smart and secure pulse of your shopping gallery",
-    "meta.description": "IoT platform by VanguardTech for perimeter monitoring, early fire detection and fair electricity and water sub-metering in urban shopping galleries.",
+    "meta.description": "Protect your gallery against break-ins and fires, and charge each stand only for the electricity and water it uses. A VanguardTech solution.",
 
     // nav
     "nav.services": "Services",
@@ -167,22 +167,22 @@ window.STOREPULSE_I18N.en = {
     "form.sending": "Sending request...",
 
     // footer
-    "footer.description": "Internet of Things (IoT) solution developed by VanguardTech for monitoring and automating urban shopping galleries.",
+    "footer.description": "Built by VanguardTech to protect shopping galleries and fairly measure each stand's electricity and water use.",
     "footer.location": "Lima, Peru • 2026",
     "footer.platform": "Platform",
-    "footer.iotSolutions": "IoT Solutions",
-    "footer.roleBenefits": "Benefits by Role",
-    "footer.edgeArchitecture": "Edge Architecture",
+    "footer.iotSolutions": "Services",
+    "footer.roleBenefits": "Benefits",
+    "footer.edgeArchitecture": "How It Works",
     "footer.subscriptionPlans": "Subscription Plans",
     "footer.access": "Access",
     "footer.webAccess": "Web Platform Access (Coming Soon)",
     "footer.mobileApp": "Download Mobile App (Coming Soon)",
-    "footer.support": "Technical Support",
+    "footer.support": "Help",
     "footer.faq": "Frequently Asked Questions",
     "footer.legal": "Legal",
-    "footer.terms": "Terms of Service (VS-08)",
-    "footer.privacy": "Privacy Policy (VS-09)",
-    "footer.iotSecurity": "IoT Security Statement",
+    "footer.terms": "Terms of Service",
+    "footer.privacy": "Privacy Policy",
+    "footer.iotSecurity": "Data Security",
     "footer.license": "Software License",
     "footer.rights": "© 2026 VanguardTech. All rights reserved.",
 

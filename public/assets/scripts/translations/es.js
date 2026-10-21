@@ -8,7 +8,7 @@ window.STOREPULSE_I18N = window.STOREPULSE_I18N || {};
 window.STOREPULSE_I18N.es = {
     // meta
     "meta.title": "StorePulse | El pulso inteligente y seguro de tu galería comercial",
-    "meta.description": "Plataforma IoT de supervisión perimetral, detección temprana de incendios y sub-medición justa de luz y agua para galerías comerciales urbanas por VanguardTech.",
+    "meta.description": "Protege tu galería contra robos e incendios y cobra a cada stand solo la luz y el agua que usa. Una solución de VanguardTech.",
 
     // nav
     "nav.services": "Servicios",
@@ -168,22 +168,22 @@ window.STOREPULSE_I18N.es = {
     "form.sending": "Enviando solicitud...",
 
     // footer
-    "footer.description": "Solución de Internet de las Cosas (IoT) desarrollada por VanguardTech para la supervisión y automatización de galerías comerciales urbanas.",
+    "footer.description": "Desarrollado por VanguardTech para proteger galerías comerciales y medir de forma justa la luz y el agua de cada stand.",
     "footer.location": "Lima, Perú • 2026",
     "footer.platform": "Plataforma",
-    "footer.iotSolutions": "Soluciones IoT",
-    "footer.roleBenefits": "Beneficios por Rol",
-    "footer.edgeArchitecture": "Arquitectura Edge",
+    "footer.iotSolutions": "Servicios",
+    "footer.roleBenefits": "Beneficios",
+    "footer.edgeArchitecture": "Cómo funciona",
     "footer.subscriptionPlans": "Planes de Suscripción",
     "footer.access": "Acceso",
     "footer.webAccess": "Acceso a Plataforma Web (Próximamente)",
     "footer.mobileApp": "Descargar App Móvil (Próximamente)",
-    "footer.support": "Soporte Técnico",
+    "footer.support": "Ayuda",
     "footer.faq": "Preguntas Frecuentes",
     "footer.legal": "Legal",
-    "footer.terms": "Términos de Servicio (VS-08)",
-    "footer.privacy": "Política de Privacidad (VS-09)",
-    "footer.iotSecurity": "Declaración de Seguridad IoT",
+    "footer.terms": "Términos de Servicio",
+    "footer.privacy": "Política de Privacidad",
+    "footer.iotSecurity": "Seguridad de tus datos",
     "footer.license": "Licencia de Software",
     "footer.rights": "© 2026 VanguardTech. Todos los derechos reservados.",
 
