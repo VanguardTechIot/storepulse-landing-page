@@ -176,7 +176,7 @@ window.STOREPULSE_I18N.en = {
     "footer.edgeArchitecture": "How It Works",
     "footer.subscriptionPlans": "Subscription Plans",
     "footer.access": "Access",
-    "footer.webAccess": "Web Platform Access (Coming Soon)",
+    "footer.webAccess": "Web Platform Access",
     "footer.mobileApp": "Download Mobile App (Coming Soon)",
     "footer.support": "Help",
     "footer.faq": "Frequently Asked Questions",

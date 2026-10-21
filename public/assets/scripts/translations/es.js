@@ -177,7 +177,7 @@ window.STOREPULSE_I18N.es = {
     "footer.edgeArchitecture": "Cómo funciona",
     "footer.subscriptionPlans": "Planes de Suscripción",
     "footer.access": "Acceso",
-    "footer.webAccess": "Acceso a Plataforma Web (Próximamente)",
+    "footer.webAccess": "Acceso a Plataforma Web",
     "footer.mobileApp": "Descargar App Móvil (Próximamente)",
     "footer.support": "Ayuda",
     "footer.faq": "Preguntas Frecuentes",
