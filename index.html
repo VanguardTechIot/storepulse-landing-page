@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StorePulse | El pulso inteligente y seguro de tu galería comercial</title>
+    <title data-i18n="meta.title">StorePulse | El pulso inteligente y seguro de tu galería comercial</title>
 
     <!-- SEO & Metadatos Canónicos -->
-    <meta name="description" content="Plataforma IoT de supervisión perimetral, detección temprana de incendios y sub-medición justa de luz y agua para galerías comerciales urbanas por VanguardTech.">
+    <meta name="description" data-i18n-content="meta.description" content="Plataforma IoT de supervisión perimetral, detección temprana de incendios y sub-medición justa de luz y agua para galerías comerciales urbanas por VanguardTech.">
     <meta name="keywords" content="IoT, galería comercial, submedición, PZEM-004T, detección de humo, ESP32, seguridad perimetral, telemetría comercial, VanguardTech, StorePulse">
     <meta name="author" content="VanguardTech">
     <meta name="robots" content="index, follow">
@@ -45,21 +45,26 @@
 
         <nav class="nav-menu" id="navMenu">
             <ul class="nav-links">
-                <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
-                <li><a href="#como-funciona" class="nav-link">Cómo Funciona</a></li>
-                <li><a href="#planes" class="nav-link">Planes</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                <li><a href="#servicios" class="nav-link" data-i18n="nav.services">Servicios</a></li>
+                <li><a href="#beneficios" class="nav-link" data-i18n="nav.benefits">Beneficios</a></li>
+                <li><a href="#como-funciona" class="nav-link" data-i18n="nav.howItWorks">Cómo Funciona</a></li>
+                <li><a href="#planes" class="nav-link" data-i18n="nav.plans">Planes</a></li>
+                <li><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                <li><a href="#equipo" class="nav-link" data-i18n="nav.team">Equipo</a></li>
             </ul>
 
             <div class="nav-actions">
-                <a href="#contacto" class="btn-text">Iniciar Sesión</a>
-                <a href="#contacto" class="btn btn-primary btn-sm">Solicitar Demo</a>
+                <!-- Selector de idioma ES / EN -->
+                <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-aria-label="nav.langGroup">
+                    <button type="button" class="lang-option active" data-lang="es" aria-pressed="true" title="Español">ES</button>
+                    <button type="button" class="lang-option" data-lang="en" aria-pressed="false" title="English">EN</button>
+                </div>
+                <a href="#contacto" class="btn-text" data-i18n="nav.login">Iniciar Sesión</a>
+                <a href="#contacto" class="btn btn-primary btn-sm" data-i18n="nav.requestDemo">Solicitar Demo</a>
             </div>
         </nav>
 
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" data-i18n-aria-label="nav.menuAria">
             <span></span>
             <span></span>
             <span></span>
@@ -76,33 +81,33 @@
             <div class="hero-content">
                 <div class="badge badge-accent">
                     <span class="status-indicator status-green"></span>
-                    Ecosistema IoT para Galerías Comerciales
+                    <span data-i18n="hero.badge">Ecosistema IoT para Galerías Comerciales</span>
                 </div>
-                <h1 class="hero-title">
+                <h1 class="hero-title" data-i18n="hero.title">
                     El pulso inteligente y <span class="highlight">seguro</span> de tu galería comercial
                 </h1>
-                <p class="hero-description">
+                <p class="hero-description" data-i18n="hero.description">
                     Monitoreo en tiempo real de seguridad perimetral, detección temprana de incendios y sub-medición exacta de agua y electricidad por local comercial. Elimina el prorrateo conflictivo y gestiona emergencias con telemetría en el Edge.
                 </p>
                 <div class="hero-cta-group">
-                    <a href="#contacto" class="btn btn-primary btn-lg">Comenzar ahora &rarr;</a>
-                    <a href="#como-funciona" class="btn btn-secondary btn-lg">Ver demostración</a>
+                    <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">Comenzar ahora &rarr;</a>
+                    <a href="#como-funciona" class="btn btn-secondary btn-lg" data-i18n="hero.ctaSecondary">Ver demostración</a>
                 </div>
 
                 <div class="hero-proof">
                     <div class="proof-metric">
                         <span class="proof-number">&lt; 2 s</span>
-                        <span class="proof-label">Tiempo de alerta crítica</span>
+                        <span class="proof-label" data-i18n="hero.proofAlert">Tiempo de alerta crítica</span>
                     </div>
                     <div class="proof-divider"></div>
                     <div class="proof-metric">
                         <span class="proof-number">100%</span>
-                        <span class="proof-label">Consumo individualizado</span>
+                        <span class="proof-label" data-i18n="hero.proofConsumption">Consumo individualizado</span>
                     </div>
                     <div class="proof-divider"></div>
                     <div class="proof-metric">
                         <span class="proof-number">24/7</span>
-                        <span class="proof-label">Operación local offline</span>
+                        <span class="proof-label" data-i18n="hero.proofOffline">Operación local offline</span>
                     </div>
                 </div>
             </div>
@@ -114,34 +119,34 @@
                             <span class="gallery-icon">&#127970;</span>
                             <div>
                                 <strong>Galería Central Polvos Azules</strong>
-                                <span class="text-caption">Sector Calzado &bull; Nivel 1</span>
+                                <span class="text-caption" data-i18n="hero.gallerySector">Sector Calzado &bull; Nivel 1</span>
                             </div>
                         </div>
-                        <span class="badge-status badge-success">En línea &bull; Normal</span>
+                        <span class="badge-status badge-success" data-i18n="hero.status">En línea &bull; Normal</span>
                     </div>
 
                     <!-- Panel de telemetría simulada en tiempo real -->
                     <div class="telemetry-widgets">
                         <div class="widget-metric">
-                            <span class="widget-title">ENERGÍA ACTIVA (PZEM-004T)</span>
+                            <span class="widget-title" data-i18n="hero.energyTitle">ENERGÍA ACTIVA (PZEM-004T)</span>
                             <div class="metric-value">42.8 <span class="metric-unit">kWh</span></div>
                             <div class="metric-progress-bar">
                                 <div class="metric-progress-fill" style="width: 65%;"></div>
                             </div>
                             <div class="widget-footer">
-                                <span class="text-caption text-success">&uarr; Normal vs. Línea base</span>
+                                <span class="text-caption text-success" data-i18n="hero.energyTrend">&uarr; Normal vs. Línea base</span>
                                 <span class="text-mono">220.4 V</span>
                             </div>
                         </div>
 
                         <div class="widget-metric">
-                            <span class="widget-title">CONSUMO DE AGUA (YF-S201)</span>
-                            <div class="metric-value">1,240 <span class="metric-unit">Litros</span></div>
+                            <span class="widget-title" data-i18n="hero.waterTitle">CONSUMO DE AGUA (YF-S201)</span>
+                            <div class="metric-value">1,240 <span class="metric-unit" data-i18n="hero.waterUnit">Litros</span></div>
                             <div class="metric-progress-bar">
                                 <div class="metric-progress-fill fill-cyan" style="width: 40%;"></div>
                             </div>
                             <div class="widget-footer">
-                                <span class="text-caption">0 fugas nocturnas</span>
+                                <span class="text-caption" data-i18n="hero.waterLeaks">0 fugas nocturnas</span>
                                 <span class="text-mono">1.2 LPM</span>
                             </div>
                         </div>
@@ -150,15 +155,15 @@
                     <div class="security-strip">
                         <div class="sensor-pill">
                             <span class="status-dot dot-green"></span>
-                            <span>Cortina Metálica: <strong>Cerrada</strong></span>
+                            <span data-i18n="hero.sensorShutter">Cortina Metálica: <strong>Cerrada</strong></span>
                         </div>
                         <div class="sensor-pill">
                             <span class="status-dot dot-green"></span>
-                            <span>Sensor Humo MQ-2: <strong>Limpio</strong></span>
+                            <span data-i18n="hero.sensorSmoke">Sensor Humo MQ-2: <strong>Limpio</strong></span>
                         </div>
                         <div class="sensor-pill">
                             <span class="status-dot dot-green"></span>
-                            <span>Modo Red: <strong>Edge Gateway</strong></span>
+                            <span data-i18n="hero.sensorNetwork">Modo Red: <strong>Edge Gateway</strong></span>
                         </div>
                     </div>
                 </div>
@@ -172,9 +177,9 @@
     <section class="section section-alt" id="servicios">
         <div class="container">
             <div class="section-header text-center">
-                <span class="badge badge-accent">Soluciones Integrales</span>
-                <h2 class="section-title">Tecnología de precisión para recintos comerciales</h2>
-                <p class="section-subtitle">
+                <span class="badge badge-accent" data-i18n="services.badge">Soluciones Integrales</span>
+                <h2 class="section-title" data-i18n="services.title">Tecnología de precisión para recintos comerciales</h2>
+                <p class="section-subtitle" data-i18n="services.subtitle">
                     Arquitectura articulada entre nodos sensores en locales, pasarelas locales Edge y plataformas en la nube.
                 </p>
             </div>
@@ -184,8 +189,8 @@
                     <div class="card-icon-wrapper icon-cyan">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3 class="card-title">Seguridad Perimetral IoT</h3>
-                    <p class="card-text">
+                    <h3 class="card-title" data-i18n="services.security.title">Seguridad Perimetral IoT</h3>
+                    <p class="card-text" data-i18n="services.security.text">
                         Sensores magnéticos de apertura en cortinas metálicas y detección de movimiento PIR fuera del horario comercial, activando protocolos inmediatos.
                     </p>
                 </article>
@@ -194,8 +199,8 @@
                     <div class="card-icon-wrapper icon-red">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
                     </div>
-                    <h3 class="card-title">Detección de Humo & Fuego</h3>
-                    <p class="card-text">
+                    <h3 class="card-title" data-i18n="services.smoke.title">Detección de Humo & Fuego</h3>
+                    <p class="card-text" data-i18n="services.smoke.text">
                         Monitoreo químico de gases y concentración de humo mediante sensores MQ-2 calibrados para suprimir falsos positivos y actuar antes de siniestros.
                     </p>
                 </article>
@@ -204,8 +209,8 @@
                     <div class="card-icon-wrapper icon-amber">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
                     </div>
-                    <h3 class="card-title">Sub-medición Eléctrica</h3>
-                    <p class="card-text">
+                    <h3 class="card-title" data-i18n="services.power.title">Sub-medición Eléctrica</h3>
+                    <p class="card-text" data-i18n="services.power.text">
                         Medidores PZEM-004T con transformador de corriente no invasivo. Registra voltaje, factor de potencia y kWh exactos consumidos en cada tienda.
                     </p>
                 </article>
@@ -214,8 +219,8 @@
                     <div class="card-icon-wrapper icon-blue">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
                     </div>
-                    <h3 class="card-title">Telemetría de Agua Potable</h3>
-                    <p class="card-text">
+                    <h3 class="card-title" data-i18n="services.water.title">Telemetría de Agua Potable</h3>
+                    <p class="card-text" data-i18n="services.water.text">
                         Caudalímetros de efecto Hall YF-S201 con detección de fugas nocturnas por goteo y lectura precisa en litros para eliminar el cobro por prorrateo.
                     </p>
                 </article>
@@ -229,9 +234,9 @@
     <section class="section" id="beneficios">
         <div class="container">
             <div class="section-header text-center">
-                <span class="badge badge-accent">Propuesta de Valor Diferenciada</span>
-                <h2 class="section-title">Beneficios hechos a la medida de tu rol</h2>
-                <p class="section-subtitle">
+                <span class="badge badge-accent" data-i18n="benefits.badge">Propuesta de Valor Diferenciada</span>
+                <h2 class="section-title" data-i18n="benefits.title">Beneficios hechos a la medida de tu rol</h2>
+                <p class="section-subtitle" data-i18n="benefits.subtitle">
                     Resolvemos las fricciones históricas entre la junta directiva y los comerciantes arrendatarios.
                 </p>
             </div>
@@ -240,31 +245,31 @@
                 <!-- Segmento 1: Administradores -->
                 <div class="benefit-box">
                     <div class="benefit-header">
-                        <span class="role-badge">Para Administradores de Galerías</span>
-                        <h3>Control operativo y finanzas transparentes</h3>
+                        <span class="role-badge" data-i18n="benefits.admin.role">Para Administradores de Galerías</span>
+                        <h3 data-i18n="benefits.admin.title">Control operativo y finanzas transparentes</h3>
                     </div>
                     <ul class="benefit-list">
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.admin.item1">
                                 <strong>Liquidación automatizada de recibos:</strong> Emite liquidaciones mensuales sin necesidad de lecturas manuales en pizarras o libretas.
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.admin.item2">
                                 <strong>Eliminación de disputas por prorrateo:</strong> Cada comerciante paga exactamente lo que marca su medidor verificado.
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.admin.item3">
                                 <strong>Supervisión de guardias y rondas:</strong> Registro con timestamp verificable de verificaciones físicas de alertas en pasillos.
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.admin.item4">
                                 <strong>Reducción de primas de seguro:</strong> Infraestructura de mitigación de incendios auditable y certificable.
                             </div>
                         </li>
@@ -274,31 +279,31 @@
                 <!-- Segmento 2: Inquilinos -->
                 <div class="benefit-box">
                     <div class="benefit-header">
-                        <span class="role-badge">Para Inquilinos y Comerciantes</span>
-                        <h3>Paz mental y cobros estrictamente justos</h3>
+                        <span class="role-badge" data-i18n="benefits.tenant.role">Para Inquilinos y Comerciantes</span>
+                        <h3 data-i18n="benefits.tenant.title">Paz mental y cobros estrictamente justos</h3>
                     </div>
                     <ul class="benefit-list">
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.tenant.item1">
                                 <strong>Acceso móvil 24/7 a su local:</strong> Revisa desde tu celular si tu cortina quedó bien cerrada o si hay corte eléctrico.
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.tenant.item2">
                                 <strong>Cero subsidio de consumos ajenos:</strong> Si tu tienda de ropa no usa agua ni refrigeración, tu factura mensual lo refleja.
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.tenant.item3">
                                 <strong>Alerta de intrusión en &lt; 2 segundos:</strong> Notificación push crítica inmediata mientras se despacha al personal de seguridad.
                             </div>
                         </li>
                         <li>
                             <span class="check-icon">&#10003;</span>
-                            <div>
+                            <div data-i18n="benefits.tenant.item4">
                                 <strong>Historial de consumo auditable:</strong> Gráficas comparativas por mes que sustentan cada centavo de tus servicios.
                             </div>
                         </li>
@@ -314,9 +319,9 @@
     <section class="section section-alt" id="como-funciona">
         <div class="container">
             <div class="section-header text-center">
-                <span class="badge badge-accent">Flujo Operativo</span>
-                <h2 class="section-title">De la señal física a tu pantalla en 3 pasos</h2>
-                <p class="section-subtitle">
+                <span class="badge badge-accent" data-i18n="how.badge">Flujo Operativo</span>
+                <h2 class="section-title" data-i18n="how.title">De la señal física a tu pantalla en 3 pasos</h2>
+                <p class="section-subtitle" data-i18n="how.subtitle">
                     Arquitectura de hardware distribuido y telemetría edge diseñada para operar incluso sin conexión a internet.
                 </p>
             </div>
@@ -325,8 +330,8 @@
                 <div class="step-card">
                     <div class="step-badge">1</div>
                     <div class="step-icon">&#128225;</div>
-                    <h3 class="step-title">Instalación No Invasiva</h3>
-                    <p class="step-text">
+                    <h3 class="step-title" data-i18n="how.step1.title">Instalación No Invasiva</h3>
+                    <p class="step-text" data-i18n="how.step1.text">
                         Nodos ESP32 equipados con sensores magnéticos, MQ-2, PZEM-004T y YF-S201 instalados en cada local sin necesidad de costosas obras civiles ni perforaciones estructurales.
                     </p>
                 </div>
@@ -334,8 +339,8 @@
                 <div class="step-card">
                     <div class="step-badge">2</div>
                     <div class="step-icon">&#9881;</div>
-                    <h3 class="step-title">Edge Gateway & LittleFS</h3>
-                    <p class="step-text">
+                    <h3 class="step-title" data-i18n="how.step2.title">Edge Gateway & LittleFS</h3>
+                    <p class="step-text" data-i18n="how.step2.text">
                         Los datos se consolidan localmente en la pasarela de la galería. Si la conexión a internet cae, los eventos y consumos se protegen en la memoria flash local para sincronización posterior.
                     </p>
                 </div>
@@ -343,8 +348,8 @@
                 <div class="step-card">
                     <div class="step-badge">3</div>
                     <div class="step-icon">&#128241;</div>
-                    <h3 class="step-title">Gestión Web & App Móvil</h3>
-                    <p class="step-text">
+                    <h3 class="step-title" data-i18n="how.step3.title">Gestión Web & App Móvil</h3>
+                    <p class="step-text" data-i18n="how.step3.text">
                         Los administradores liquidan recibos y supervisan alertas desde el panel web, mientras los inquilinos y guardias reciben notificaciones push y consultan telemetría en la app móvil.
                     </p>
                 </div>
@@ -358,20 +363,20 @@
     <section class="section" id="planes">
         <div class="container">
             <div class="section-header text-center">
-                <span class="badge badge-accent">Planes Flexibles</span>
-                <h2 class="section-title">Precios adaptados a las dimensiones de tu galería</h2>
-                <p class="section-subtitle">
+                <span class="badge badge-accent" data-i18n="plans.badge">Planes Flexibles</span>
+                <h2 class="section-title" data-i18n="plans.title">Precios adaptados a las dimensiones de tu galería</h2>
+                <p class="section-subtitle" data-i18n="plans.subtitle">
                     Elige el plan SaaS que mejor se adapte a tu número de locales comerciales monitoreados.
                 </p>
 
                 <!-- Toggle Mensual / Anual -->
                 <div class="billing-toggle-container">
-                    <span class="billing-option" id="labelMonthly">Facturación Mensual</span>
+                    <span class="billing-option" id="labelMonthly" data-i18n="plans.billingMonthly">Facturación Mensual</span>
                     <label class="switch">
                         <input type="checkbox" id="billingToggle">
                         <span class="slider round"></span>
                     </label>
-                    <span class="billing-option" id="labelAnnual">
+                    <span class="billing-option" id="labelAnnual" data-i18n="plans.billingAnnual">
               Facturación Anual <span class="badge-discount">Ahorra 20%</span>
             </span>
                 </div>
@@ -381,67 +386,67 @@
                 <!-- Plan Básico -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="plan-name">Plan Básico</h3>
-                        <p class="plan-desc">Ideal para galerías pequeñas o pasajes comerciales de hasta 15 locales.</p>
+                        <h3 class="plan-name" data-i18n="plans.basic.name">Plan Básico</h3>
+                        <p class="plan-desc" data-i18n="plans.basic.desc">Ideal para galerías pequeñas o pasajes comerciales de hasta 15 locales.</p>
                         <div class="price-box">
                             <span class="currency">S/</span>
                             <span class="price-value" data-monthly="149" data-annual="119">149</span>
-                            <span class="period">/ mes</span>
+                            <span class="period" data-i18n="plans.perMonth">/ mes</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
-                        <li>Hasta 15 locales comerciales</li>
-                        <li>Monitoreo de energía y agua</li>
-                        <li>Detección básica de humo</li>
-                        <li>App móvil para inquilinos</li>
-                        <li>Soporte técnico por correo</li>
+                        <li data-i18n="plans.basic.f1">Hasta 15 locales comerciales</li>
+                        <li data-i18n="plans.basic.f2">Monitoreo de energía y agua</li>
+                        <li data-i18n="plans.basic.f3">Detección básica de humo</li>
+                        <li data-i18n="plans.basic.f4">App móvil para inquilinos</li>
+                        <li data-i18n="plans.basic.f5">Soporte técnico por correo</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline btn-block">Seleccionar Plan</a>
+                    <a href="#contacto" class="btn btn-outline btn-block" data-i18n="plans.basic.cta">Seleccionar Plan</a>
                 </div>
 
                 <!-- Plan Comercial (Destacado) -->
                 <div class="pricing-card pricing-featured">
-                    <div class="featured-ribbon">Más Popular</div>
+                    <div class="featured-ribbon" data-i18n="plans.popular">Más Popular</div>
                     <div class="pricing-header">
-                        <h3 class="plan-name">Plan Comercial</h3>
-                        <p class="plan-desc">La solución estándar para galerías medianas de hasta 50 locales.</p>
+                        <h3 class="plan-name" data-i18n="plans.commercial.name">Plan Comercial</h3>
+                        <p class="plan-desc" data-i18n="plans.commercial.desc">La solución estándar para galerías medianas de hasta 50 locales.</p>
                         <div class="price-box">
                             <span class="currency">S/</span>
                             <span class="price-value" data-monthly="349" data-annual="279">349</span>
-                            <span class="period">/ mes</span>
+                            <span class="period" data-i18n="plans.perMonth">/ mes</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
-                        <li>Hasta 50 locales comerciales</li>
-                        <li>Seguridad perimetral + Humo MQ-2</li>
-                        <li>Liquidación de recibos PDF automática</li>
-                        <li>Módulo de rondas para guardias</li>
-                        <li>Respaldo offline LittleFS activado</li>
-                        <li>Soporte prioritario 24/7</li>
+                        <li data-i18n="plans.commercial.f1">Hasta 50 locales comerciales</li>
+                        <li data-i18n="plans.commercial.f2">Seguridad perimetral + Humo MQ-2</li>
+                        <li data-i18n="plans.commercial.f3">Liquidación de recibos PDF automática</li>
+                        <li data-i18n="plans.commercial.f4">Módulo de rondas para guardias</li>
+                        <li data-i18n="plans.commercial.f5">Respaldo offline LittleFS activado</li>
+                        <li data-i18n="plans.commercial.f6">Soporte prioritario 24/7</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-primary btn-block">Comenzar Ahora</a>
+                    <a href="#contacto" class="btn btn-primary btn-block" data-i18n="plans.commercial.cta">Comenzar Ahora</a>
                 </div>
 
                 <!-- Plan Corporativo -->
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="plan-name">Plan Corporativo</h3>
-                        <p class="plan-desc">Para grandes conglomerados comerciales o cadenas de galerías urbanas.</p>
+                        <h3 class="plan-name" data-i18n="plans.corporate.name">Plan Corporativo</h3>
+                        <p class="plan-desc" data-i18n="plans.corporate.desc">Para grandes conglomerados comerciales o cadenas de galerías urbanas.</p>
                         <div class="price-box">
                             <span class="currency">S/</span>
                             <span class="price-value" data-monthly="699" data-annual="559">699</span>
-                            <span class="period">/ mes</span>
+                            <span class="period" data-i18n="plans.perMonth">/ mes</span>
                         </div>
                     </div>
                     <ul class="pricing-features">
-                        <li>Locales comerciales ilimitados</li>
-                        <li>Múltiples pasarelas Edge Gateways</li>
-                        <li>Integración API con sistemas contables</li>
-                        <li>Gestor de cuenta dedicado</li>
-                        <li>Capacitación presencial al personal</li>
-                        <li>SLA garantizado de 99.9%</li>
+                        <li data-i18n="plans.corporate.f1">Locales comerciales ilimitados</li>
+                        <li data-i18n="plans.corporate.f2">Múltiples pasarelas Edge Gateways</li>
+                        <li data-i18n="plans.corporate.f3">Integración API con sistemas contables</li>
+                        <li data-i18n="plans.corporate.f4">Gestor de cuenta dedicado</li>
+                        <li data-i18n="plans.corporate.f5">Capacitación presencial al personal</li>
+                        <li data-i18n="plans.corporate.f6">SLA garantizado de 99.9%</li>
                     </ul>
-                    <a href="#contacto" class="btn btn-outline btn-block">Contactar Ventas</a>
+                    <a href="#contacto" class="btn btn-outline btn-block" data-i18n="plans.corporate.cta">Contactar Ventas</a>
                 </div>
             </div>
         </div>
@@ -453,9 +458,9 @@
     <section class="section section-alt" id="faq">
         <div class="container container-narrow">
             <div class="section-header text-center">
-                <span class="badge badge-accent">Preguntas Frecuentes</span>
-                <h2 class="section-title">Respuestas claras a tus dudas sobre StorePulse</h2>
-                <p class="section-subtitle">
+                <span class="badge badge-accent" data-i18n="faq.badge">Preguntas Frecuentes</span>
+                <h2 class="section-title" data-i18n="faq.title">Respuestas claras a tus dudas sobre StorePulse</h2>
+                <p class="section-subtitle" data-i18n="faq.subtitle">
                     Todo lo que necesitas saber antes de modernizar tu galería comercial.
                 </p>
             </div>
@@ -463,41 +468,41 @@
             <div class="faq-accordion">
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Es necesario realizar obras civiles o picar paredes para instalar los medidores?</span>
+                        <span data-i18n="faq.q1">¿Es necesario realizar obras civiles o picar paredes para instalar los medidores?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>No. Los medidores eléctricos PZEM-004T utilizan transformadores de corriente de núcleo dividido tipo gancho no invasivo, los cuales se abrazan al alimentador principal de cada tablero sin interrumpir el cableado existente. Los caudalímetros de agua se instalan en las llaves de paso con adaptadores rápidos estándar.</p>
+                        <p data-i18n="faq.a1">No. Los medidores eléctricos PZEM-004T utilizan transformadores de corriente de núcleo dividido tipo gancho no invasivo, los cuales se abrazan al alimentador principal de cada tablero sin interrumpir el cableado existente. Los caudalímetros de agua se instalan en las llaves de paso con adaptadores rápidos estándar.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Qué ocurre si la galería se queda sin internet o sin energía eléctrica?</span>
+                        <span data-i18n="faq.q2">¿Qué ocurre si la galería se queda sin internet o sin energía eléctrica?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>El sistema cuenta con resiliencia de hardware de dos niveles: 1) Cada nodo IoT incorpora una batería de respaldo 18650 para mantener la supervisión de intrusión y humo durante cortes de luz. 2) Ante la pérdida de internet, el sistema almacena todos los eventos y mediciones en la memoria flash local (LittleFS), sincronizándose automáticamente al restablecerse el enlace.</p>
+                        <p data-i18n="faq.a2">El sistema cuenta con resiliencia de hardware de dos niveles: 1) Cada nodo IoT incorpora una batería de respaldo 18650 para mantener la supervisión de intrusión y humo durante cortes de luz. 2) Ante la pérdida de internet, el sistema almacena todos los eventos y mediciones en la memoria flash local (LittleFS), sincronizándose automáticamente al restablecerse el enlace.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Cómo se calculan y entregan los recibos a los comerciantes inquilinos?</span>
+                        <span data-i18n="faq.q3">¿Cómo se calculan y entregan los recibos a los comerciantes inquilinos?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>El sistema multiplica la lectura acumulada en kWh y litros por la tarifa oficial configurada por la administración. Cada fin de ciclo, genera automáticamente recibos en PDF individuales con desglose cuantitativo y gráfico, los cuales llegan directamente a la app móvil del comerciante.</p>
+                        <p data-i18n="faq.a3">El sistema multiplica la lectura acumulada en kWh y litros por la tarifa oficial configurada por la administración. Cada fin de ciclo, genera automáticamente recibos en PDF individuales con desglose cuantitativo y gráfico, los cuales llegan directamente a la app móvil del comerciante.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>¿Qué tan rápido reciben los inquilinos y guardias una alerta de intrusión o humo?</span>
+                        <span data-i18n="faq.q4">¿Qué tan rápido reciben los inquilinos y guardias una alerta de intrusión o humo?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Las alertas de emergencia tienen máxima prioridad semántica. El procesamiento en el Edge Gateway dispara la notificación push crítica hacia los teléfonos de los vigilantes y del dueño del local en menos de dos segundos (&lt; 2 s), activando un banner persistente y vibración acústica continua.</p>
+                        <p data-i18n="faq.a4">Las alertas de emergencia tienen máxima prioridad semántica. El procesamiento en el Edge Gateway dispara la notificación push crítica hacia los teléfonos de los vigilantes y del dueño del local en menos de dos segundos (&lt; 2 s), activando un banner persistente y vibración acústica continua.</p>
                     </div>
                 </div>
             </div>
@@ -511,8 +516,8 @@
         <div class="container">
             <div class="section-header text-center">
                 <span class="badge badge-accent">VanguardTech</span>
-                <h2 class="section-title">El equipo de ingeniería detrás de StorePulse</h2>
-                <p class="section-subtitle">
+                <h2 class="section-title" data-i18n="team.title">El equipo de ingeniería detrás de StorePulse</h2>
+                <p class="section-subtitle" data-i18n="team.subtitle">
                     Estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC) comprometidos con la transformación tecnológica de los comercios urbanos.
                 </p>
             </div>
@@ -525,7 +530,7 @@
                     <div class="team-info">
                         <h3 class="team-name">Renzo Araujo Ingunza</h3>
                         <span class="team-role">Software Architecture & Cloud</span>
-                        <p class="team-bio">Especialista en desarrollo full-stack y arquitectura empresarial. Lidera el despliegue en la nube, las pasarelas de integración y la estrategia GitFlow.</p>
+                        <p class="team-bio" data-i18n="team.bio.renzo">Especialista en desarrollo full-stack y arquitectura empresarial. Lidera el despliegue en la nube, las pasarelas de integración y la estrategia GitFlow.</p>
                     </div>
                 </div>
 
@@ -537,7 +542,7 @@
                     <div class="team-info">
                         <h3 class="team-name">Sebastián Córdova Valdivia</h3>
                         <span class="team-role">Full-Stack & Security Specialist</span>
-                        <p class="team-bio">Enfocado en seguridad informática, diseño centrado en el usuario (Lean UX) y ciberseguridad en el Edge, garantizando robustez ante vulnerabilidades.</p>
+                        <p class="team-bio" data-i18n="team.bio.sebastian">Enfocado en seguridad informática, diseño centrado en el usuario (Lean UX) y ciberseguridad en el Edge, garantizando robustez ante vulnerabilidades.</p>
                     </div>
                 </div>
 
@@ -549,7 +554,7 @@
                     <div class="team-info">
                         <h3 class="team-name">Angelo Curi Marcelo</h3>
                         <span class="team-role">Embedded Systems & IoT Hardware</span>
-                        <p class="team-bio">Especialista en programación de microcontroladores ESP32, comunicación UART con medidores PZEM-004T y telemetría de sensores MQ-2.</p>
+                        <p class="team-bio" data-i18n="team.bio.angelo">Especialista en programación de microcontroladores ESP32, comunicación UART con medidores PZEM-004T y telemetría de sensores MQ-2.</p>
                     </div>
                 </div>
 
@@ -561,7 +566,7 @@
                     <div class="team-info">
                         <h3 class="team-name">Henry Diaz Gutierrez</h3>
                         <span class="team-role">Frontend Web Applications (Angular)</span>
-                        <p class="team-bio">Líder del frontend modular con Angular, responsable de la experiencia de usuario y componentes visuales del panel de administración.</p>
+                        <p class="team-bio" data-i18n="team.bio.henry">Líder del frontend modular con Angular, responsable de la experiencia de usuario y componentes visuales del panel de administración.</p>
                     </div>
                 </div>
 
@@ -573,7 +578,7 @@
                     <div class="team-info">
                         <h3 class="team-name">Joaquín Carranza Tesén</h3>
                         <span class="team-role">IoT Integration & Web Development</span>
-                        <p class="team-bio">Integración de pasarelas Edge, pruebas de consistencia cross-platform, desarrollo de interfaces interactivas y control de calidad.</p>
+                        <p class="team-bio" data-i18n="team.bio.joaquin">Integración de pasarelas Edge, pruebas de consistencia cross-platform, desarrollo de interfaces interactivas y control de calidad.</p>
                     </div>
                 </div>
 
@@ -585,7 +590,7 @@
                     <div class="team-info">
                         <h3 class="team-name">Juan Diego Esquivel León</h3>
                         <span class="team-role">Backend Services & Spring Boot</span>
-                        <p class="team-bio">Diseño e implementación de microservicios RESTful con Spring Boot, arquitectura Domain-Driven Design (DDD) y persistencia de telemetría.</p>
+                        <p class="team-bio" data-i18n="team.bio.juanDiego">Diseño e implementación de microservicios RESTful con Spring Boot, arquitectura Domain-Driven Design (DDD) y persistencia de telemetría.</p>
                     </div>
                 </div>
             </div>
@@ -599,65 +604,65 @@
         <div class="container">
             <div class="cta-contact-wrapper">
                 <div class="cta-info">
-                    <span class="badge badge-accent">Da el siguiente paso</span>
-                    <h2 class="cta-title">Moderniza la seguridad y los servicios de tu galería</h2>
-                    <p class="cta-text">
+                    <span class="badge badge-accent" data-i18n="contact.badge">Da el siguiente paso</span>
+                    <h2 class="cta-title" data-i18n="contact.title">Moderniza la seguridad y los servicios de tu galería</h2>
+                    <p class="cta-text" data-i18n="contact.text">
                         Agenda una demostración guiada con nuestro equipo técnico. Analizaremos las necesidades particulares de tus locales y te brindaremos un presupuesto a medida sin compromiso.
                     </p>
 
                     <div class="quote-card">
-                        <p class="quote-text">
+                        <p class="quote-text" data-i18n="contact.quote">
                             "Antes perdíamos horas discutiendo por el recibo de luz de las máquinas de coser del segundo piso. Con StorePulse cada puesto tiene su telemetría clara y se acabaron las quejas."
                         </p>
                         <div class="quote-author">
                             <strong>Alvaro Quispe</strong>
-                            <span>Administrador &bull; Galería Textil Los Vencedores</span>
+                            <span data-i18n="contact.quoteRole">Administrador &bull; Galería Textil Los Vencedores</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="contact-card">
-                    <h3 class="form-title">Solicitar Demostración</h3>
+                    <h3 class="form-title" data-i18n="form.title">Solicitar Demostración</h3>
                     <form id="demoForm" class="demo-form" novalidate>
                         <div class="form-group">
-                            <label for="fullName">Nombre y Apellidos *</label>
-                            <input type="text" id="fullName" class="form-control" placeholder="Ej. Carlos Ramos" required>
-                            <span class="form-error" id="nameError">Por favor ingresa tu nombre.</span>
+                            <label for="fullName" data-i18n="form.nameLabel">Nombre y Apellidos *</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Ej. Carlos Ramos" data-i18n-placeholder="form.namePlaceholder" required>
+                            <span class="form-error" id="nameError" data-i18n="form.nameError">Por favor ingresa tu nombre.</span>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Correo Corporativo o Personal *</label>
+                            <label for="email" data-i18n="form.emailLabel">Correo Corporativo o Personal *</label>
                             <input type="email" id="email" class="form-control" placeholder="carlos@galeria.pe" required>
-                            <span class="form-error" id="emailError">Ingresa un correo electrónico válido.</span>
+                            <span class="form-error" id="emailError" data-i18n="form.emailError">Ingresa un correo electrónico válido.</span>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="phone">Teléfono / WhatsApp *</label>
+                                <label for="phone" data-i18n="form.phoneLabel">Teléfono / WhatsApp *</label>
                                 <input type="tel" id="phone" class="form-control" placeholder="+51 987 654 321" required>
-                                <span class="form-error" id="phoneError">Ingresa un número telefónico.</span>
+                                <span class="form-error" id="phoneError" data-i18n="form.phoneError">Ingresa un número telefónico.</span>
                             </div>
                             <div class="form-group">
-                                <label for="storeCount">Número de Locales</label>
+                                <label for="storeCount" data-i18n="form.storesLabel">Número de Locales</label>
                                 <select id="storeCount" class="form-control">
-                                    <option value="1-15">1 a 15 locales</option>
-                                    <option value="16-50" selected>16 a 50 locales</option>
-                                    <option value="51+">Más de 50 locales</option>
+                                    <option value="1-15" data-i18n="form.stores1">1 a 15 locales</option>
+                                    <option value="16-50" selected data-i18n="form.stores2">16 a 50 locales</option>
+                                    <option value="51+" data-i18n="form.stores3">Más de 50 locales</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="galleryName">Nombre de la Galería Comercial *</label>
-                            <input type="text" id="galleryName" class="form-control" placeholder="Ej. Galería Moda Express" required>
-                            <span class="form-error" id="galleryError">Indica el nombre de tu galería.</span>
+                            <label for="galleryName" data-i18n="form.galleryLabel">Nombre de la Galería Comercial *</label>
+                            <input type="text" id="galleryName" class="form-control" placeholder="Ej. Galería Moda Express" data-i18n-placeholder="form.galleryPlaceholder" required>
+                            <span class="form-error" id="galleryError" data-i18n="form.galleryError">Indica el nombre de tu galería.</span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn" data-i18n="form.submit">
                             Solicitar Demostración Gratuita &rarr;
                         </button>
 
-                        <div class="form-success" id="formSuccess">
+                        <div class="form-success" id="formSuccess" data-i18n="form.success">
                             &#10004; ¡Solicitud recibida! Un especialista de VanguardTech se comunicará contigo en menos de 24 horas.
                         </div>
                     </form>
@@ -680,51 +685,55 @@
                 </svg>
                 <span class="brand-text">Store<span class="brand-accent">Pulse</span></span>
             </a>
-            <p class="footer-text">
+            <p class="footer-text" data-i18n="footer.description">
                 Solución de Internet de las Cosas (IoT) desarrollada por VanguardTech para la supervisión y automatización de galerías comerciales urbanas.
             </p>
-            <span class="text-caption">Lima, Perú &bull; 2026</span>
+            <span class="text-caption" data-i18n="footer.location">Lima, Perú &bull; 2026</span>
         </div>
 
         <div class="footer-col">
-            <h4 class="footer-heading">Plataforma</h4>
+            <h4 class="footer-heading" data-i18n="footer.platform">Plataforma</h4>
             <ul class="footer-links">
-                <li><a href="#servicios">Soluciones IoT</a></li>
-                <li><a href="#beneficios">Beneficios por Rol</a></li>
-                <li><a href="#como-funciona">Arquitectura Edge</a></li>
-                <li><a href="#planes">Planes de Suscripción</a></li>
+                <li><a href="#servicios" data-i18n="footer.iotSolutions">Soluciones IoT</a></li>
+                <li><a href="#beneficios" data-i18n="footer.roleBenefits">Beneficios por Rol</a></li>
+                <li><a href="#como-funciona" data-i18n="footer.edgeArchitecture">Arquitectura Edge</a></li>
+                <li><a href="#planes" data-i18n="footer.subscriptionPlans">Planes de Suscripción</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4 class="footer-heading">Acceso</h4>
+            <h4 class="footer-heading" data-i18n="footer.access">Acceso</h4>
             <ul class="footer-links">
-                <li><a href="#contacto">Acceso a Plataforma Web (Próximamente)</a></li>
-                <li><a href="#contacto">Descargar App Móvil (Próximamente)</a></li>
-                <li><a href="#contacto">Soporte Técnico</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" data-i18n="footer.webAccess">Acceso a Plataforma Web (Próximamente)</a></li>
+                <li><a href="#contacto" data-i18n="footer.mobileApp">Descargar App Móvil (Próximamente)</a></li>
+                <li><a href="#contacto" data-i18n="footer.support">Soporte Técnico</a></li>
+                <li><a href="#faq" data-i18n="footer.faq">Preguntas Frecuentes</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4 class="footer-heading">Legal</h4>
+            <h4 class="footer-heading" data-i18n="footer.legal">Legal</h4>
             <ul class="footer-links">
-                <li><a href="public/sections/terms.html">Términos de Servicio (VS-08)</a></li>
-                <li><a href="public/sections/privacy.html">Política de Privacidad (VS-09)</a></li>
-                <li><a href="#">Declaración de Seguridad IoT</a></li>
-                <li><a href="#">Licencia de Software</a></li>
+                <li><a href="public/sections/terms.html" data-i18n="footer.terms">Términos de Servicio (VS-08)</a></li>
+                <li><a href="public/sections/privacy.html" data-i18n="footer.privacy">Política de Privacidad (VS-09)</a></li>
+                <li><a href="#" data-i18n="footer.iotSecurity">Declaración de Seguridad IoT</a></li>
+                <li><a href="#" data-i18n="footer.license">Licencia de Software</a></li>
             </ul>
         </div>
     </div>
 
     <div class="footer-bottom">
         <div class="container footer-bottom-flex">
-            <p>&copy; 2026 VanguardTech. Todos los derechos reservados.</p>
+            <p data-i18n="footer.rights">&copy; 2026 VanguardTech. Todos los derechos reservados.</p>
             <p class="text-caption">UPC - Desarrollo de Soluciones IoT (1ASI0572)</p>
         </div>
     </div>
 </footer>
 
+<!-- Traducciones (deben cargarse antes del motor i18n y de main.js) -->
+<script src="public/assets/scripts/translations/es.js"></script>
+<script src="public/assets/scripts/translations/en.js"></script>
+<script src="public/assets/scripts/i18n.js"></script>
 <script src="public/assets/scripts/main.js"></script>
 </body>
 </html>
