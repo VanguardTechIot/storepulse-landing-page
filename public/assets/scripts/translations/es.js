@@ -122,13 +122,13 @@ window.STOREPULSE_I18N.es = {
     "faq.title": "Respuestas claras a tus dudas sobre StorePulse",
     "faq.subtitle": "Todo lo que necesitas saber antes de modernizar tu galería comercial.",
     "faq.q1": "¿Es necesario realizar obras civiles o picar paredes para instalar los medidores?",
-    "faq.a1": "No. Los medidores eléctricos PZEM-004T utilizan transformadores de corriente de núcleo dividido tipo gancho no invasivo, los cuales se abrazan al alimentador principal de cada tablero sin interrumpir el cableado existente. Los caudalímetros de agua se instalan en las llaves de paso con adaptadores rápidos estándar.",
+    "faq.a1": "No. Los medidores de luz se colocan alrededor de los cables del tablero de cada stand, como una pinza, sin cortar ni cambiar la instalación. Los medidores de agua se conectan en la llave de paso de forma rápida y sencilla.",
     "faq.q2": "¿Qué ocurre si la galería se queda sin internet o sin energía eléctrica?",
-    "faq.a2": "El sistema cuenta con resiliencia de hardware de dos niveles: 1) Cada nodo IoT incorpora una batería de respaldo 18650 para mantener la supervisión de intrusión y humo durante cortes de luz. 2) Ante la pérdida de internet, el sistema almacena todos los eventos y mediciones en la memoria flash local (LittleFS), sincronizándose automáticamente al restablecerse el enlace.",
+    "faq.a2": "Tu galería sigue protegida. Si se va la luz, cada equipo tiene una batería que mantiene activa la vigilancia contra robos y humo. Si se cae el internet, el sistema guarda todo lo que pasa y lo envía solo cuando vuelve la conexión.",
     "faq.q3": "¿Cómo se calculan y entregan los recibos a los comerciantes inquilinos?",
-    "faq.a3": "El sistema multiplica la lectura acumulada en kWh y litros por la tarifa oficial configurada por la administración. Cada fin de ciclo, genera automáticamente recibos en PDF individuales con desglose cuantitativo y gráfico, los cuales llegan directamente a la app móvil del comerciante.",
-    "faq.q4": "¿Qué tan rápido reciben los inquilinos y guardias una alerta de intrusión o humo?",
-    "faq.a4": "Las alertas de emergencia tienen máxima prioridad semántica. El procesamiento en el Edge Gateway dispara la notificación push crítica hacia los teléfonos de los vigilantes y del dueño del local en menos de dos segundos (&lt; 2 s), activando un banner persistente y vibración acústica continua.",
+    "faq.a3": "El sistema toma lo que consumió cada stand en luz y agua y lo multiplica por la tarifa que fija la administración. Al final de cada mes genera un recibo en PDF para cada inquilino, con el detalle y un gráfico, y se lo envía directo a su celular.",
+    "faq.q4": "¿Qué tan rápido llega una alerta de robo o de humo?",
+    "faq.a4": "En menos de 2 segundos. Las alertas de emergencia llegan de inmediato al celular del personal de seguridad y del dueño del stand, con un aviso que se queda en pantalla, sonido y vibración hasta que alguien lo atienda.",
 
     // team
     "team.title": "El equipo de ingeniería detrás de StorePulse",

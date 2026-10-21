@@ -121,13 +121,13 @@ window.STOREPULSE_I18N.en = {
     "faq.title": "Clear answers to your questions about StorePulse",
     "faq.subtitle": "Everything you need to know before modernizing your shopping gallery.",
     "faq.q1": "Do I need construction work or to break into walls to install the meters?",
-    "faq.a1": "No. The PZEM-004T electricity meters use non-invasive split-core clamp current transformers that clip around the main feeder of each panel without interrupting the existing wiring. The water flow meters are installed at the shut-off valves using standard quick-connect adapters.",
+    "faq.a1": "No. The electricity meters clip around the cables in each stand's panel, like a clamp, without cutting or changing the wiring. The water meters connect to the shut-off valve quickly and easily.",
     "faq.q2": "What happens if the gallery loses internet access or power?",
-    "faq.a2": "The system has two levels of hardware resilience: 1) Each IoT node includes an 18650 backup battery to keep intrusion and smoke monitoring running during power outages. 2) If the internet connection is lost, the system stores all events and readings in local flash memory (LittleFS) and synchronizes automatically once the link is restored.",
+    "faq.a2": "Your gallery stays protected. If the power goes out, each device has a battery that keeps break-in and smoke monitoring active. If the internet goes down, the system saves everything that happens and sends it on its own once the connection is back.",
     "faq.q3": "How are bills calculated and delivered to tenant merchants?",
-    "faq.a3": "The system multiplies the accumulated kWh and liter readings by the official rate set by the administration. At the end of each billing cycle, it automatically generates individual PDF bills with a numeric and graphical breakdown, delivered straight to the merchant's mobile app.",
-    "faq.q4": "How quickly do tenants and guards receive an intrusion or smoke alert?",
-    "faq.a4": "Emergency alerts have the highest semantic priority. Processing on the Edge Gateway sends a critical push notification to the guards' and store owner's phones in under two seconds (&lt; 2 s), triggering a persistent banner and continuous vibration and sound.",
+    "faq.a3": "The system takes each stand's electricity and water usage and multiplies it by the rate set by management. At the end of each month it generates a PDF bill for every tenant, with the details and a chart, and sends it straight to their phone.",
+    "faq.q4": "How fast does a break-in or smoke alert arrive?",
+    "faq.a4": "In under 2 seconds. Emergency alerts reach the phones of security staff and the stand owner right away, with an on-screen notice, sound and vibration that stay until someone responds.",
 
     // team
     "team.title": "The engineering team behind StorePulse",
