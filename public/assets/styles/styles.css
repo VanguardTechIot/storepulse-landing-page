@@ -1107,6 +1107,13 @@ input:checked + .slider:before { transform: translateX(24px); }
     background: rgba(14, 165, 233, 0.06);
 }
 
+.terms-index-link.active {
+    color: #0369A1;
+    font-weight: 600;
+    border-left-color: var(--color-accent-cyan);
+    background: rgba(14, 165, 233, 0.1);
+}
+
 .terms-body {
     display: flex;
     flex-direction: column;
@@ -1269,6 +1276,8 @@ input:checked + .slider:before { transform: translateX(24px); }
         border-radius: var(--radius-full);
         font-size: 0.875rem;
     }
+
+    .terms-index-link.active { border-color: var(--color-accent-cyan); }
 
     .terms-clause {
         grid-template-columns: minmax(0, 1fr);
