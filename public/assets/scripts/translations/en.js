@@ -180,7 +180,7 @@ window.STOREPULSE_I18N.en = {
     "footer.support": "Help",
     "footer.faq": "Frequently Asked Questions",
     "footer.legal": "Legal",
-    "footer.terms": "Terms of Service",
+    "footer.terms": "Terms and Conditions",
     "footer.privacy": "Privacy Policy",
     "footer.iotSecurity": "Data Security",
     "footer.license": "Software License",

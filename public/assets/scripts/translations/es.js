@@ -181,7 +181,7 @@ window.STOREPULSE_I18N.es = {
     "footer.support": "Ayuda",
     "footer.faq": "Preguntas Frecuentes",
     "footer.legal": "Legal",
-    "footer.terms": "Términos de Servicio",
+    "footer.terms": "Términos y Condiciones",
     "footer.privacy": "Política de Privacidad",
     "footer.iotSecurity": "Seguridad de tus datos",
     "footer.license": "Licencia de Software",
