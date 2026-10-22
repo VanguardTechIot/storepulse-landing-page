@@ -194,5 +194,20 @@ window.STOREPULSE_I18N.es = {
     "legal.terms.body": "Última actualización: Octubre 2026. VanguardTech provee soluciones IoT para administración comercial...",
     "legal.privacy.pageTitle": "Política de Privacidad | StorePulse",
     "legal.privacy.heading": "Política de Privacidad - StorePulse",
-    "legal.privacy.body": "Última actualización: Octubre 2026. La telemetría capturada por los sensores IoT en locales comerciales es confidencial..."
+    "legal.privacy.body": "Última actualización: Octubre 2026. La telemetría capturada por los sensores IoT en locales comerciales es confidencial...",
+
+    // terms
+    "terms.badge": "Términos y Condiciones",
+    "terms.title": "Reglas claras para usar StorePulse",
+    "terms.subtitle": "Lo que aceptas al contratar el servicio, explicado de forma sencilla.",
+    "terms.updated": "Última actualización: octubre de 2026",
+    "terms.indexTitle": "Contenido",
+    "terms.c1.title": "Aceptación de los términos",
+    "terms.c2.title": "Descripción del servicio",
+    "terms.c3.title": "Planes, pagos y facturación",
+    "terms.c4.title": "Instalación y equipos",
+    "terms.c5.title": "Uso de datos y privacidad",
+    "terms.c6.title": "Responsabilidades de la galería",
+    "terms.c7.title": "Limitación de responsabilidad",
+    "terms.c8.title": "Cancelación y cambios"
 };
