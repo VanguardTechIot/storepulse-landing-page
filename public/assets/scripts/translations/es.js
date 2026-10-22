@@ -209,5 +209,9 @@ window.STOREPULSE_I18N.es = {
     "terms.c5.title": "Uso de datos y privacidad",
     "terms.c6.title": "Responsabilidades de la galería",
     "terms.c7.title": "Limitación de responsabilidad",
-    "terms.c8.title": "Cancelación y cambios"
+    "terms.c8.title": "Cancelación y cambios",
+    "terms.c1.text": "Al contratar o usar StorePulse (la plataforma web, la app móvil o los equipos instalados en tu galería) aceptas estos términos. Si contratas en nombre de una galería o empresa, declaras que tienes autorización para hacerlo.",
+    "terms.c2.text": "StorePulse es un servicio de VanguardTech que vigila cada stand contra robos y humo, y mide el consumo de luz y agua de cada uno. Incluye los equipos instalados, la plataforma para ver la información y las alertas al celular, según el plan contratado.",
+    "terms.c3.text": "Los planes se pagan por adelantado, de forma mensual o anual, en soles. El precio depende del número de stands y del plan elegido. Si un pago se retrasa más de 15 días, podemos suspender el acceso a la plataforma hasta que se regularice; mientras tanto, los equipos siguen guardando la información.",
+    "terms.c4.text": "Nuestro equipo técnico instala los medidores y sensores sin obras ni cortes de cableado. Los equipos son propiedad de VanguardTech mientras dure el servicio, salvo que se compren aparte. La galería se compromete a no manipularlos ni moverlos sin coordinarlo con soporte."
 };

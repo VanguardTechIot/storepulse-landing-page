@@ -208,5 +208,9 @@ window.STOREPULSE_I18N.en = {
     "terms.c5.title": "Data use and privacy",
     "terms.c6.title": "Mall responsibilities",
     "terms.c7.title": "Limitation of liability",
-    "terms.c8.title": "Cancellation and changes"
+    "terms.c8.title": "Cancellation and changes",
+    "terms.c1.text": "By hiring or using StorePulse (the web platform, the mobile app or the devices installed in your mall) you accept these terms. If you sign up on behalf of a mall or company, you confirm that you are authorized to do so.",
+    "terms.c2.text": "StorePulse is a VanguardTech service that protects each stand against break-ins and smoke, and measures the electricity and water each one uses. It includes the installed devices, the platform to view the data and the alerts on your phone, according to your plan.",
+    "terms.c3.text": "Plans are paid in advance, monthly or yearly, in Peruvian soles. The price depends on the number of stands and the chosen plan. If a payment is more than 15 days late, we may suspend access to the platform until it is settled; meanwhile, the devices keep storing the data.",
+    "terms.c4.text": "Our technical team installs the meters and sensors with no construction work or wiring cuts. The devices remain VanguardTech property for as long as the service lasts, unless purchased separately. The mall agrees not to tamper with or move them without coordinating with support."
 };
