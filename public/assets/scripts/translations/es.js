@@ -42,6 +42,13 @@ window.STOREPULSE_I18N.es = {
     "hero.sensorSmoke": "Detector de humo: <strong>Sin humo</strong>",
     "hero.sensorNetwork": "Conexión: <strong>Activa</strong>",
 
+    // video
+    "video.badge": "Conoce StorePulse",
+    "video.title": "StorePulse en un minuto",
+    "video.subtitle": "Mira cómo protegemos cada stand y cobramos a cada inquilino solo lo que consume.",
+    "video.aria": "Video de presentación de StorePulse",
+    "video.fallback": "Descargar el video de StorePulse",
+
     // services
     "services.badge": "Lo que hacemos",
     "services.title": "Todo lo que tu galería necesita, en un solo sistema",
