@@ -127,4 +127,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // 6. Índice de Términos y Condiciones: resalta la cláusula que se está leyendo (VS-08)
+    const termsLinks = document.querySelectorAll('.terms-index-link');
+    const termsClauses = document.querySelectorAll('.terms-clause');
+
+    if (termsLinks.length && 'IntersectionObserver' in window) {
+        const termsObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+
+                termsLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                });
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        termsClauses.forEach(clause => termsObserver.observe(clause));
+    }
+
 });
