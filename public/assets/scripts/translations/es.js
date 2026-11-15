@@ -1,6 +1,6 @@
 /**
- * StorePulse - Textos en español (idioma por defecto).
- * Cada clave corresponde a un atributo data-i18n en el HTML.
+ * StorePulse - Spanish translations.
+ * Every key matches a data-i18n attribute in the HTML.
  */
 
 window.STOREPULSE_I18N = window.STOREPULSE_I18N || {};
@@ -18,7 +18,7 @@ window.STOREPULSE_I18N.es = {
     "nav.faq": "FAQ",
     "nav.team": "Equipo",
     "nav.login": "Iniciar Sesión",
-    "nav.requestDemo": "Solicitar Demo",
+    "nav.getStarted": "Comenzar ahora",
     "nav.menuAria": "Abrir menú de navegación",
     "nav.langGroup": "Idioma",
 
@@ -150,12 +150,12 @@ window.STOREPULSE_I18N.es = {
     // contact
     "contact.badge": "Da el siguiente paso",
     "contact.title": "Moderniza la seguridad y los servicios de tu galería",
-    "contact.text": "Agenda una demostración guiada con nuestro equipo técnico. Analizaremos las necesidades particulares de tus locales y te brindaremos un presupuesto a medida sin compromiso.",
+    "contact.text": "Cuéntanos sobre tu galería y nuestro equipo técnico analizará las necesidades particulares de tus locales para brindarte un presupuesto a medida sin compromiso.",
     "contact.quote": "\"Antes perdíamos horas discutiendo por el recibo de luz de las máquinas de coser del segundo piso. Con StorePulse cada puesto tiene su telemetría clara y se acabaron las quejas.\"",
     "contact.quoteRole": "Administrador • Galería Textil Los Vencedores",
 
     // form
-    "form.title": "Solicitar Demostración",
+    "form.title": "Contáctanos",
     "form.nameLabel": "Nombre y Apellidos *",
     "form.nameError": "Por favor ingresa tu nombre.",
     "form.emailLabel": "Correo Corporativo o Personal *",
@@ -168,7 +168,7 @@ window.STOREPULSE_I18N.es = {
     "form.stores3": "Más de 50 locales",
     "form.galleryLabel": "Nombre de la Galería Comercial *",
     "form.galleryError": "Indica el nombre de tu galería.",
-    "form.submit": "Solicitar Demostración Gratuita →",
+    "form.submit": "Enviar consulta →",
     "form.success": "✔ ¡Solicitud recibida! Un especialista de VanguardTech se comunicará contigo en menos de 24 horas.",
     "form.namePlaceholder": "Ej. Carlos Ramos",
     "form.galleryPlaceholder": "Ej. Galería Moda Express",
@@ -184,7 +184,7 @@ window.STOREPULSE_I18N.es = {
     "footer.subscriptionPlans": "Planes de Suscripción",
     "footer.access": "Acceso",
     "footer.webAccess": "Acceso a Plataforma Web",
-    "footer.mobileApp": "Descargar App Móvil (Próximamente)",
+    "footer.mobileApp": "App Móvil (Android)",
     "footer.support": "Ayuda",
     "footer.faq": "Preguntas Frecuentes",
     "footer.legal": "Legal",
