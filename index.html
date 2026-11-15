@@ -60,7 +60,7 @@
                     <button type="button" class="lang-option active" data-lang="en" aria-pressed="true" title="English">EN</button>
                     <button type="button" class="lang-option" data-lang="es" aria-pressed="false" title="Español">ES</button>
                 </div>
-                <a href="https://storepulse-web-app.web.app/iam/sign-in?returnUrl=%2Fdashboard" class="btn-text" target="_blank" rel="noopener noreferrer" data-i18n="nav.login">Iniciar Sesión</a>
+                <a href="https://storepulse-web-app.firebaseapp.com/iam/sign-in?returnUrl=%2Fdashboard" class="btn-text" target="_blank" rel="noopener noreferrer" data-i18n="nav.login">Iniciar Sesión</a>
                 <a href="#contacto" class="btn btn-primary btn-sm" data-i18n="nav.requestDemo">Solicitar Demo</a>
             </div>
         </nav>
@@ -91,8 +91,8 @@
                     Monitoreo en tiempo real de seguridad perimetral, detección temprana de incendios y sub-medición exacta de agua y electricidad por local comercial. Elimina el prorrateo conflictivo y gestiona emergencias con telemetría en el Edge.
                 </p>
                 <div class="hero-cta-group">
-                    <a href="#contacto" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">Comenzar ahora &rarr;</a>
-                    <a href="#como-funciona" class="btn btn-secondary btn-lg" data-i18n="hero.ctaSecondary">Ver demostración</a>
+                    <a href="https://storepulse-web-app.firebaseapp.com/iam/sign-up" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaPrimary">Comenzar ahora &rarr;</a>
+                    <a href="#producto" class="btn btn-secondary btn-lg" data-i18n="hero.ctaSecondary">Ver demostración</a>
                 </div>
 
                 <div class="hero-proof">
@@ -168,6 +168,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- 2. ACERCA DEL PRODUCTO / VIDEO                                            -->
+    <!-- ========================================================================= -->
+    <section class="section" id="producto">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent" data-i18n="video.badge">Conoce StorePulse</span>
+                <h2 class="section-title" data-i18n="video.title">StorePulse en un minuto</h2>
+                <p class="section-subtitle" data-i18n="video.subtitle">
+                    Mira cómo protegemos cada stand y cobramos a cada inquilino solo lo que consume.
+                </p>
+            </div>
+
+            <div class="product-video-frame">
+                <video class="product-video" controls preload="metadata" playsinline
+                       poster="public/assets/videos/storepulse-poster.jpg"
+                       data-i18n-aria-label="video.aria" aria-label="Video de presentación de StorePulse">
+                    <source src="public/assets/videos/storepulse.mp4" type="video/mp4">
+                    <a href="public/assets/videos/storepulse.mp4" data-i18n="video.fallback">Descargar el video de StorePulse</a>
+                </video>
             </div>
         </div>
     </section>
@@ -526,7 +550,7 @@
                 <!-- 1. Renzo Araujo Ingunza -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <img src="public/assets/images/team/renzo-araujo.png" alt="Renzo Araujo Ingunza">
+                        <img src="public/assets/images/team/renzo_araujo.jpeg" alt="Renzo Araujo Ingunza">
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Renzo Araujo Ingunza</h3>
@@ -538,7 +562,7 @@
                 <!-- 2. Sebastián Córdova Valdivia -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <img src="public/assets/images/team/sebastian-cordova.jpeg" alt="Sebastián Córdova Valdivia">
+                        <img src="public/assets/images/team/sebastian_cordova.jpeg" alt="Sebastián Córdova Valdivia">
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Sebastián Córdova Valdivia</h3>
@@ -550,7 +574,7 @@
                 <!-- 3. Angelo Curi Marcelo -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <img src="public/assets/images/team/angelo-curi.png" alt="Angelo Curi Marcelo">
+                        <img src="public/assets/images/team/angelo_curi.jpeg" alt="Angelo Curi Marcelo">
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Angelo Curi Marcelo</h3>
@@ -562,7 +586,7 @@
                 <!-- 4. Henry Diaz Gutierrez -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <img src="public/assets/images/team/henry-diaz.png" alt="Henry Diaz Gutierrez">
+                        <img src="public/assets/images/team/henry_diaz.jpeg" alt="Henry Diaz Gutierrez">
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Henry Diaz Gutierrez</h3>
@@ -586,7 +610,7 @@
                 <!-- 6. Miguel Juan Diego Esquivel León -->
                 <div class="team-card">
                     <div class="team-avatar">
-                        <img src="https://ui-avatars.com/api/?name=Juan+Diego+Esquivel&background=0F172A&color=0EA5E9" alt="Juan Diego Esquivel León">
+                        <img src="public/assets/images/team/juandiego_esquivel.jpeg" alt="Juan Diego Esquivel León">
                     </div>
                     <div class="team-info">
                         <h3 class="team-name">Juan Diego Esquivel León</h3>
@@ -805,7 +829,7 @@
         <div class="footer-col">
             <h4 class="footer-heading" data-i18n="footer.access">Acceso</h4>
             <ul class="footer-links">
-                <li><a href="https://storepulse-web-app.web.app/iam/sign-in?returnUrl=%2Fdashboard" target="_blank" rel="noopener noreferrer" data-i18n="footer.webAccess">Acceso a Plataforma Web</a></li>
+                <li><a href="https://storepulse-web-app.firebaseapp.com/iam/sign-in?returnUrl=%2Fdashboard" target="_blank" rel="noopener noreferrer" data-i18n="footer.webAccess">Acceso a Plataforma Web</a></li>
                 <li><a href="#contacto" data-i18n="footer.mobileApp">Descargar App Móvil (Próximamente)</a></li>
                 <li><a href="#contacto" data-i18n="footer.support">Soporte Técnico</a></li>
                 <li><a href="#faq" data-i18n="footer.faq">Preguntas Frecuentes</a></li>
