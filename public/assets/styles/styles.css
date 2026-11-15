@@ -315,7 +315,7 @@ img { max-width: 100%; display: block; }
     border-radius: var(--radius-full);
     background: transparent;
     color: var(--color-secondary-slate);
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), sans-serif;
     font-size: 0.8125rem;
     font-weight: 700;
     line-height: 1;
