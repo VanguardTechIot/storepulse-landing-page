@@ -1,19 +1,19 @@
 /**
- * StorePulse - Motor de internacionalización (ES / EN)
+ * StorePulse - Internationalization engine (EN / ES)
  *
- * Cómo funciona:
- *  - Los textos viven en translations/es.js y translations/en.js
- *    (objeto global window.STOREPULSE_I18N).
- *  - En el HTML, cada elemento traducible lleva una clave:
- *      data-i18n="hero.title"                  -> reemplaza el contenido del elemento
- *      data-i18n-placeholder="form.x"          -> reemplaza el atributo placeholder
- *      data-i18n-aria-label="nav.menuAria"     -> reemplaza el atributo aria-label
- *      data-i18n-content="meta.description"    -> reemplaza el atributo content (<meta>)
- *  - Los botones con data-lang="es" | "en" cambian el idioma.
- *  - El idioma elegido se guarda en localStorage y se reutiliza en todas las páginas.
+ * How it works:
+ *  - Translations live in translations/en.js and translations/es.js
+ *    (global object window.STOREPULSE_I18N).
+ *  - In the HTML, each translatable element carries a key:
+ *      data-i18n="hero.title"                  -> replaces element content
+ *      data-i18n-placeholder="form.x"          -> replaces placeholder attribute
+ *      data-i18n-aria-label="nav.menuAria"     -> replaces aria-label attribute
+ *      data-i18n-content="meta.description"    -> replaces content attribute (<meta>)
+ *  - Buttons with data-lang="en" | "es" switch the active language.
+ *  - The selected language is saved in localStorage across pages.
  *
- * Se usan archivos .js (y no .json + fetch) para que la página funcione también
- * abriendo index.html con doble clic (protocolo file://).
+ * Uses .js files instead of .json + fetch so the page also works
+ * when opening index.html directly via the file:// protocol.
  */
 (function () {
     'use strict';
@@ -33,7 +33,7 @@
         try {
             return localStorage.getItem(STORAGE_KEY);
         } catch (e) {
-            return null; // navegación privada o almacenamiento bloqueado
+            return null; // Private browsing or storage blocked
         }
     }
 
@@ -41,17 +41,17 @@
         try {
             localStorage.setItem(STORAGE_KEY, lang);
         } catch (e) {
-            /* sin persistencia: el idioma se mantiene solo en esta visita */
+            /* No persistence: language is kept only for this visit */
         }
     }
 
-    /** Devuelve el texto de una clave en el idioma actual (con respaldo en español). */
+    /** Returns the translated text for a key in the current language (with default-language fallback). */
     function t(key) {
         const dict = dictionaries[currentLang] || {};
         if (key in dict) return dict[key];
         const fallback = dictionaries[DEFAULT_LANG] || {};
         if (key in fallback) return fallback[key];
-        console.warn('[i18n] Clave sin traducir:', key);
+        console.warn('[i18n] Missing translation key:', key);
         return key;
     }
 
@@ -91,7 +91,7 @@
         document.dispatchEvent(new CustomEvent('languagechange', { detail: { lang } }));
     }
 
-    /** Cambia el idioma por elección del usuario y lo recuerda. */
+    /** Sets the language chosen by the user and stores the preference. */
     function setLanguage(lang) {
         applyLanguage(lang);
         saveLang(currentLang);
@@ -104,7 +104,7 @@
         applyLanguage(readSavedLang() || DEFAULT_LANG);
     }
 
-    // API pública para main.js y otras páginas
+    // Public API for main.js and other pages
     window.i18n = {
         t,
         setLanguage,

@@ -18,7 +18,7 @@ window.STOREPULSE_I18N.en = {
     "nav.faq": "FAQ",
     "nav.team": "Team",
     "nav.login": "Log In",
-    "nav.requestDemo": "Request Demo",
+    "nav.getStarted": "Get started",
     "nav.menuAria": "Open navigation menu",
     "nav.langGroup": "Language",
 
@@ -149,12 +149,12 @@ window.STOREPULSE_I18N.en = {
     // contact
     "contact.badge": "Take the next step",
     "contact.title": "Modernize your gallery's security and utilities",
-    "contact.text": "Schedule a guided demo with our technical team. We will analyze the specific needs of your stores and give you a tailored, no-obligation quote.",
+    "contact.text": "Tell us about your shopping gallery and our technical team will analyze your stores' needs to give you a tailored, no-obligation quote.",
     "contact.quote": "\"We used to waste hours arguing over the electricity bill for the sewing machines on the second floor. With StorePulse every stall has clear telemetry and the complaints are over.\"",
     "contact.quoteRole": "Administrator • Galería Textil Los Vencedores",
 
     // form
-    "form.title": "Request a Demo",
+    "form.title": "Contact Us",
     "form.nameLabel": "Full Name *",
     "form.nameError": "Please enter your name.",
     "form.emailLabel": "Business or Personal Email *",
@@ -167,7 +167,7 @@ window.STOREPULSE_I18N.en = {
     "form.stores3": "More than 50 stores",
     "form.galleryLabel": "Shopping Gallery Name *",
     "form.galleryError": "Enter your gallery's name.",
-    "form.submit": "Request a Free Demo →",
+    "form.submit": "Send inquiry →",
     "form.success": "✔ Request received! A VanguardTech specialist will contact you within 24 hours.",
     "form.namePlaceholder": "e.g. Carlos Ramos",
     "form.galleryPlaceholder": "e.g. Galería Moda Express",
@@ -183,7 +183,7 @@ window.STOREPULSE_I18N.en = {
     "footer.subscriptionPlans": "Subscription Plans",
     "footer.access": "Access",
     "footer.webAccess": "Web Platform Access",
-    "footer.mobileApp": "Download Mobile App (Coming Soon)",
+    "footer.mobileApp": "Mobile App (Android)",
     "footer.support": "Help",
     "footer.faq": "Frequently Asked Questions",
     "footer.legal": "Legal",
@@ -220,9 +220,12 @@ window.STOREPULSE_I18N.en = {
     "terms.c2.text": "StorePulse is a VanguardTech service that protects each stand against break-ins and smoke, and measures the electricity and water each one uses. It includes the installed devices, the platform to view the data and the alerts on your phone, according to your plan.",
     "terms.c3.text": "Plans are paid in advance, monthly or yearly, in Peruvian soles. The price depends on the number of stands and the chosen plan. If a payment is more than 15 days late, we may suspend access to the platform until it is settled; meanwhile, the devices keep storing the data.",
     "terms.c4.text": "Our technical team installs the meters and sensors with no construction work or wiring cuts. The devices remain VanguardTech property for as long as the service lasts, unless purchased separately. The mall agrees not to tamper with or move them without coordinating with support.",
-    "terms.c5.text": "Your mall's consumption and alert data belongs to you. We use it only to provide the service, generate bills and improve the system, and we never sell it to third parties. We handle it under Peru's Personal Data Protection Law No. 29733. More details in our <a href=\"public/sections/privacy.html\">Privacy Policy</a>.",
+    "terms.c5.text": "Your mall's consumption and alert data belongs to you. We use it only to provide the service, generate bills and improve the system, and we never sell it to third parties. We handle it under Peru's Personal Data Protection Law No. 29733. More details in our",
+    "terms.c5.link": "Privacy Policy",
     "terms.c6.text": "Management sets the electricity and water rates applied to each stand and is responsible for them being correct. It must also keep the mall's internet and power connection running, and notify support if a device is damaged.",
     "terms.c7.text": "StorePulse helps prevent and detect problems early, but it does not replace firefighters, the police or security staff. VanguardTech is not liable for losses caused by prolonged outages, intentional damage to the devices or failures of third-party services such as internet or phone networks.",
     "terms.c8.text": "You can cancel your plan at any time with 30 days' notice; when it ends we remove the devices and you can download your history. If we change these terms, we will email you before they take effect. These terms are governed by the laws of Peru.",
-    "terms.contact": "Questions about these terms? <a href=\"#contacto\">Write to us</a> and we will reply within 24 hours."
+    "terms.contactPrefix": "Questions about these terms?",
+    "terms.contactLink": "Write to us",
+    "terms.contactSuffix": "and we will reply within 24 hours."
 };

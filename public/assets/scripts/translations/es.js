@@ -1,6 +1,6 @@
 /**
- * StorePulse - Textos en español (idioma por defecto).
- * Cada clave corresponde a un atributo data-i18n en el HTML.
+ * StorePulse - Spanish translations.
+ * Every key matches a data-i18n attribute in the HTML.
  */
 
 window.STOREPULSE_I18N = window.STOREPULSE_I18N || {};
@@ -18,7 +18,7 @@ window.STOREPULSE_I18N.es = {
     "nav.faq": "FAQ",
     "nav.team": "Equipo",
     "nav.login": "Iniciar Sesión",
-    "nav.requestDemo": "Solicitar Demo",
+    "nav.getStarted": "Comenzar ahora",
     "nav.menuAria": "Abrir menú de navegación",
     "nav.langGroup": "Idioma",
 
@@ -150,12 +150,12 @@ window.STOREPULSE_I18N.es = {
     // contact
     "contact.badge": "Da el siguiente paso",
     "contact.title": "Moderniza la seguridad y los servicios de tu galería",
-    "contact.text": "Agenda una demostración guiada con nuestro equipo técnico. Analizaremos las necesidades particulares de tus locales y te brindaremos un presupuesto a medida sin compromiso.",
+    "contact.text": "Cuéntanos sobre tu galería y nuestro equipo técnico analizará las necesidades particulares de tus locales para brindarte un presupuesto a medida sin compromiso.",
     "contact.quote": "\"Antes perdíamos horas discutiendo por el recibo de luz de las máquinas de coser del segundo piso. Con StorePulse cada puesto tiene su telemetría clara y se acabaron las quejas.\"",
     "contact.quoteRole": "Administrador • Galería Textil Los Vencedores",
 
     // form
-    "form.title": "Solicitar Demostración",
+    "form.title": "Contáctanos",
     "form.nameLabel": "Nombre y Apellidos *",
     "form.nameError": "Por favor ingresa tu nombre.",
     "form.emailLabel": "Correo Corporativo o Personal *",
@@ -168,7 +168,7 @@ window.STOREPULSE_I18N.es = {
     "form.stores3": "Más de 50 locales",
     "form.galleryLabel": "Nombre de la Galería Comercial *",
     "form.galleryError": "Indica el nombre de tu galería.",
-    "form.submit": "Solicitar Demostración Gratuita →",
+    "form.submit": "Enviar consulta →",
     "form.success": "✔ ¡Solicitud recibida! Un especialista de VanguardTech se comunicará contigo en menos de 24 horas.",
     "form.namePlaceholder": "Ej. Carlos Ramos",
     "form.galleryPlaceholder": "Ej. Galería Moda Express",
@@ -184,7 +184,7 @@ window.STOREPULSE_I18N.es = {
     "footer.subscriptionPlans": "Planes de Suscripción",
     "footer.access": "Acceso",
     "footer.webAccess": "Acceso a Plataforma Web",
-    "footer.mobileApp": "Descargar App Móvil (Próximamente)",
+    "footer.mobileApp": "App Móvil (Android)",
     "footer.support": "Ayuda",
     "footer.faq": "Preguntas Frecuentes",
     "footer.legal": "Legal",
@@ -221,9 +221,12 @@ window.STOREPULSE_I18N.es = {
     "terms.c2.text": "StorePulse es un servicio de VanguardTech que vigila cada stand contra robos y humo, y mide el consumo de luz y agua de cada uno. Incluye los equipos instalados, la plataforma para ver la información y las alertas al celular, según el plan contratado.",
     "terms.c3.text": "Los planes se pagan por adelantado, de forma mensual o anual, en soles. El precio depende del número de stands y del plan elegido. Si un pago se retrasa más de 15 días, podemos suspender el acceso a la plataforma hasta que se regularice; mientras tanto, los equipos siguen guardando la información.",
     "terms.c4.text": "Nuestro equipo técnico instala los medidores y sensores sin obras ni cortes de cableado. Los equipos son propiedad de VanguardTech mientras dure el servicio, salvo que se compren aparte. La galería se compromete a no manipularlos ni moverlos sin coordinarlo con soporte.",
-    "terms.c5.text": "Los datos de consumo y de alertas de tu galería te pertenecen. Los usamos solo para dar el servicio, generar los recibos y mejorar el sistema, y nunca los vendemos a terceros. Los tratamos según la Ley N.° 29733 de Protección de Datos Personales del Perú. Más detalle en nuestra <a href=\"public/sections/privacy.html\">Política de Privacidad</a>.",
+    "terms.c5.text": "Los datos de consumo y de alertas de tu galería te pertenecen. Los usamos solo para dar el servicio, generar los recibos y mejorar el sistema, y nunca los vendemos a terceros. Los tratamos según la Ley N.° 29733 de Protección de Datos Personales del Perú. Más detalle en nuestra",
+    "terms.c5.link": "Política de Privacidad",
     "terms.c6.text": "La administración fija las tarifas de luz y agua que se aplican a cada stand y es responsable de que sean correctas. También debe mantener la conexión a internet y a la red eléctrica de la galería, y avisar a soporte si un equipo se daña.",
     "terms.c7.text": "StorePulse ayuda a prevenir y a detectar a tiempo, pero no reemplaza a los bomberos, a la policía ni al personal de seguridad. VanguardTech no responde por pérdidas causadas por cortes prolongados, daños intencionales a los equipos o fallas de servicios de terceros, como el internet o la telefonía.",
     "terms.c8.text": "Puedes cancelar tu plan cuando quieras, avisando con 30 días de anticipación; al terminar retiramos los equipos y puedes descargar tu historial. Si cambiamos estos términos, te avisaremos por correo antes de que entren en vigor. Estos términos se rigen por las leyes del Perú.",
-    "terms.contact": "¿Tienes dudas sobre estos términos? <a href=\"#contacto\">Escríbenos</a> y te respondemos en menos de 24 horas."
+    "terms.contactPrefix": "¿Tienes dudas sobre estos términos?",
+    "terms.contactLink": "Escríbenos",
+    "terms.contactSuffix": "y te respondemos en menos de 24 horas."
 };
