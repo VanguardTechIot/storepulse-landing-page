@@ -5,7 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 1. Menú Móvil Colapsable (Hamburguesa)
+    // 1. Collapsible mobile menu (hamburger)
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navToggle.classList.toggle('open');
         });
 
-        // Cerrar menú al hacer clic en un enlace de navegación
+        // Close menu when clicking a navigation link
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Acordeón Interactivo de Preguntas Frecuentes (FAQ - VS-05)
+    // 2. Interactive FAQ accordion
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach(item => {
@@ -33,17 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
         questionBtn.addEventListener('click', () => {
             const isAlreadyActive = item.classList.contains('active');
 
-            // Cerrar otros acordeones abiertos
+            // Close other open accordion items
             faqItems.forEach(otherItem => otherItem.classList.remove('active'));
 
-            // Alternar el actual
+            // Toggle the selected item
             if (!isAlreadyActive) {
                 item.classList.add('active');
             }
         });
     });
 
-    // 3. Toggle de Facturación Mensual / Anual en Planes (VS-04)
+    // 3. Monthly / annual billing toggle for plans
     const billingToggle = document.getElementById('billingToggle');
     const priceValues = document.querySelectorAll('.price-value');
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const monthly = priceEl.getAttribute('data-monthly');
                 const annual = priceEl.getAttribute('data-annual');
 
-                // Transición de cambio numérico
+                // Number change fade transition
                 priceEl.style.opacity = '0';
                 setTimeout(() => {
                     priceEl.textContent = isAnnual ? annual : monthly;
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 4. Validación y Envío del Formulario de Demostración (VS-06)
+    // 4. Contact form validation and submission
     const demoForm = document.getElementById('demoForm');
     const formSuccess = document.getElementById('formSuccess');
     const submitBtn = document.getElementById('submitBtn');
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let isValid = true;
 
-            // Validación simple con feedback visual
+            // Simple validation with visual feedback
             const validateField = (input, condition) => {
                 if (!condition) {
                     input.classList.add('invalid');
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isValid) {
                 submitBtn.disabled = true;
                 submitBtn.textContent = window.i18n ? window.i18n.t('form.sending') : 'Sending request...';
-                // Simulación de respuesta asíncrona (200 OK)
+                // Simulated asynchronous response (200 OK)
                 setTimeout(() => {
                     demoForm.reset();
                     submitBtn.style.display = 'none';
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Limpieza de estados inválidos al tipear
+        // Clear invalid state while typing
         const inputs = demoForm.querySelectorAll('.form-control');
         inputs.forEach(input => {
             input.addEventListener('input', () => {
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Sombra dinámica en Navbar al hacer Scroll
+    // 5. Dynamic navbar shadow on scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 20) {
@@ -126,5 +126,23 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.boxShadow = 'none';
         }
     });
+
+    // 6. Terms and conditions index: highlights the clause currently in view
+    const termsLinks = document.querySelectorAll('.terms-index-link');
+    const termsClauses = document.querySelectorAll('.terms-clause');
+
+    if (termsLinks.length && 'IntersectionObserver' in window) {
+        const termsObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+
+                termsLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+                });
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        termsClauses.forEach(clause => termsObserver.observe(clause));
+    }
 
 });

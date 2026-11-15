@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="meta.title">StorePulse | El pulso inteligente y seguro de tu galería comercial</title>
 
-    <!-- SEO & Metadatos Canónicos -->
+    <!-- SEO & Canonical Metadata -->
     <meta name="description" data-i18n-content="meta.description" content="Plataforma IoT de supervisión perimetral, detección temprana de incendios y sub-medición justa de luz y agua para galerías comerciales urbanas por VanguardTech.">
     <meta name="keywords" content="IoT, galería comercial, submedición, PZEM-004T, detección de humo, ESP32, seguridad perimetral, telemetría comercial, VanguardTech, StorePulse">
     <meta name="author" content="VanguardTech">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Redes Sociales -->
+    <!-- Open Graph / Social Sharing -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="StorePulse | Seguridad y cobro justo de luz y agua para galerías comerciales">
     <meta property="og:description" content="Protege cada stand contra robos e incendios, y acaba con las discusiones por los recibos de luz y agua.">
     <meta property="og:image" content="assets/branding/storepulse-preview.png">
     <meta property="og:url" content="https://storepulse.vanguardtech.pe/">
 
-    <!-- Tipografía Oficial: Plus Jakarta Sans & JetBrains Mono -->
+    <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -29,12 +29,12 @@
 <body>
 
 <!-- ========================================================================= -->
-<!-- 1. HEADER / NAVBAR STICKY (VS-01, VS-06)                                   -->
+<!-- 1. HEADER / STICKY NAVBAR                                                 -->
 <!-- ========================================================================= -->
 <header class="navbar" id="navbar">
     <div class="nav-container">
         <a href="#inicio" class="nav-brand">
-            <!-- Logotipo SVG integrado -->
+            <!-- Inline SVG Logo -->
             <svg class="brand-logo" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="36" height="36" rx="8" fill="#0F172A"/>
                 <path d="M7 20L12 20L15 13L18 25L22 17L25 20L29 20" stroke="#0EA5E9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -54,14 +54,14 @@
             </ul>
 
             <div class="nav-actions">
-                <!-- Selector de idioma ES / EN -->
+                <!-- Language Switcher (EN / ES) -->
                 <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria-label="nav.langGroup">
                     <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
                     <button type="button" class="lang-option active" data-lang="en" aria-pressed="true" title="English">EN</button>
                     <button type="button" class="lang-option" data-lang="es" aria-pressed="false" title="Español">ES</button>
                 </div>
                 <a href="https://storepulse-web-app.firebaseapp.com/iam/sign-in?returnUrl=%2Fdashboard" class="btn-text" target="_blank" rel="noopener noreferrer" data-i18n="nav.login">Iniciar Sesión</a>
-                <a href="#contacto" class="btn btn-primary btn-sm" data-i18n="nav.requestDemo">Solicitar Demo</a>
+                <a href="https://storepulse-web-app.firebaseapp.com/iam/sign-up" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" data-i18n="nav.getStarted">Comenzar ahora</a>
             </div>
         </nav>
 
@@ -75,7 +75,7 @@
 
 <main>
     <!-- ========================================================================= -->
-    <!-- 2. HERO SECTION / PROPUESTA DE VALOR (VS-01)                              -->
+    <!-- 2. HERO SECTION / VALUE PROPOSITION                                       -->
     <!-- ========================================================================= -->
     <section class="hero-section" id="inicio">
         <div class="container hero-grid">
@@ -126,7 +126,7 @@
                         <span class="badge-status badge-success" data-i18n="hero.status">En línea &bull; Normal</span>
                     </div>
 
-                    <!-- Panel de telemetría simulada en tiempo real -->
+                    <!-- Simulated real-time telemetry panel -->
                     <div class="telemetry-widgets">
                         <div class="widget-metric">
                             <span class="widget-title" data-i18n="hero.energyTitle">ENERGÍA ACTIVA (PZEM-004T)</span>
@@ -173,7 +173,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 2. ACERCA DEL PRODUCTO / VIDEO                                            -->
+    <!-- 3. ABOUT THE PRODUCT / VIDEO                                              -->
     <!-- ========================================================================= -->
     <section class="section" id="producto">
         <div class="container">
@@ -197,7 +197,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 3. WHAT WE OFFER / SOLUCIONES IOT (VS-01)                                 -->
+    <!-- 4. WHAT WE OFFER / IOT SOLUTIONS                                          -->
     <!-- ========================================================================= -->
     <section class="section section-alt" id="servicios">
         <div class="container">
@@ -254,7 +254,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 4. BENEFICIOS SEGÚN SEGMENTO (VS-02)                                      -->
+    <!-- 5. BENEFITS BY SEGMENT                                                    -->
     <!-- ========================================================================= -->
     <section class="section" id="beneficios">
         <div class="container">
@@ -267,7 +267,7 @@
             </div>
 
             <div class="benefits-grid">
-                <!-- Segmento 1: Administradores -->
+                <!-- Segment 1: Administrators -->
                 <div class="benefit-box">
                     <div class="benefit-header">
                         <span class="role-badge" data-i18n="benefits.admin.role">Para Administradores de Galerías</span>
@@ -301,7 +301,7 @@
                     </ul>
                 </div>
 
-                <!-- Segmento 2: Inquilinos -->
+                <!-- Segment 2: Tenants -->
                 <div class="benefit-box">
                     <div class="benefit-header">
                         <span class="role-badge" data-i18n="benefits.tenant.role">Para Inquilinos y Comerciantes</span>
@@ -339,7 +339,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 5. CÓMO FUNCIONA / FLUJO DE LA SOLUCIÓN (VS-03)                            -->
+    <!-- 6. HOW IT WORKS / SOLUTION FLOW                                           -->
     <!-- ========================================================================= -->
     <section class="section section-alt" id="como-funciona">
         <div class="container">
@@ -383,7 +383,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 6. PLANES DE SUSCRIPCIÓN / PRICING TABLE (VS-04)                          -->
+    <!-- 7. SUBSCRIPTION PLANS / PRICING TABLE                                     -->
     <!-- ========================================================================= -->
     <section class="section" id="planes">
         <div class="container">
@@ -394,7 +394,7 @@
                     Elige el plan SaaS que mejor se adapte a tu número de locales comerciales monitoreados.
                 </p>
 
-                <!-- Toggle Mensual / Anual -->
+                <!-- Monthly / Annual Toggle -->
                 <div class="billing-toggle-container">
                     <span class="billing-option" id="labelMonthly" data-i18n="plans.billingMonthly">Facturación Mensual</span>
                     <label class="switch">
@@ -408,7 +408,7 @@
             </div>
 
             <div class="pricing-grid">
-                <!-- Plan Básico -->
+                <!-- Basic Plan -->
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3 class="plan-name" data-i18n="plans.basic.name">Plan Básico</h3>
@@ -429,7 +429,7 @@
                     <a href="#contacto" class="btn btn-outline btn-block" data-i18n="plans.basic.cta">Seleccionar Plan</a>
                 </div>
 
-                <!-- Plan Comercial (Destacado) -->
+                <!-- Commercial Plan (Featured) -->
                 <div class="pricing-card pricing-featured">
                     <div class="featured-ribbon" data-i18n="plans.popular">Más Popular</div>
                     <div class="pricing-header">
@@ -452,7 +452,7 @@
                     <a href="#contacto" class="btn btn-primary btn-block" data-i18n="plans.commercial.cta">Comenzar Ahora</a>
                 </div>
 
-                <!-- Plan Corporativo -->
+                <!-- Corporate Plan -->
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3 class="plan-name" data-i18n="plans.corporate.name">Plan Corporativo</h3>
@@ -478,7 +478,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 7. PREGUNTAS FRECUENTES / FAQ ACCORDION (VS-05)                           -->
+    <!-- 8. FREQUENTLY ASKED QUESTIONS / FAQ ACCORDION                             -->
     <!-- ========================================================================= -->
     <section class="section section-alt" id="faq">
         <div class="container container-narrow">
@@ -535,7 +535,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 8. SOBRE NOSOTROS Y NUESTRO EQUIPO (VS-07)                                 -->
+    <!-- 9. ABOUT US & OUR TEAM                                                    -->
     <!-- ========================================================================= -->
     <section class="section" id="equipo">
         <div class="container">
@@ -623,7 +623,7 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- 9. TESTIMONIOS Y FORMULARIO DE CONTACTO / DEMO (VS-06)                    -->
+    <!-- 10. TESTIMONIALS & CONTACT FORM                                           -->
     <!-- ========================================================================= -->
     <section class="section section-alt" id="contacto">
         <div class="container">
@@ -632,7 +632,7 @@
                     <span class="badge badge-accent" data-i18n="contact.badge">Da el siguiente paso</span>
                     <h2 class="cta-title" data-i18n="contact.title">Moderniza la seguridad y los servicios de tu galería</h2>
                     <p class="cta-text" data-i18n="contact.text">
-                        Agenda una demostración guiada con nuestro equipo técnico. Analizaremos las necesidades particulares de tus locales y te brindaremos un presupuesto a medida sin compromiso.
+                        Cuéntanos sobre tu galería y nuestro equipo técnico analizará las necesidades particulares de tus locales para brindarte un presupuesto a medida sin compromiso.
                     </p>
 
                     <div class="quote-card">
@@ -647,7 +647,7 @@
                 </div>
 
                 <div class="contact-card">
-                    <h3 class="form-title" data-i18n="form.title">Solicitar Demostración</h3>
+                    <h3 class="form-title" data-i18n="form.title">Contáctanos</h3>
                     <form id="demoForm" class="demo-form" novalidate>
                         <div class="form-group">
                             <label for="fullName" data-i18n="form.nameLabel">Nombre y Apellidos *</label>
@@ -684,7 +684,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn" data-i18n="form.submit">
-                            Solicitar Demostración Gratuita &rarr;
+                            Enviar consulta &rarr;
                         </button>
 
                         <div class="form-success" id="formSuccess" data-i18n="form.success">
@@ -695,10 +695,110 @@
             </div>
         </div>
     </section>
+
+    <!-- ========================================================================= -->
+    <!-- 11. TERMS AND CONDITIONS                                                  -->
+    <!-- ========================================================================= -->
+    <section class="section" id="terminos">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="badge badge-accent" data-i18n="terms.badge">Términos y Condiciones</span>
+                <h2 class="section-title" data-i18n="terms.title">Reglas claras para usar StorePulse</h2>
+                <p class="section-subtitle" data-i18n="terms.subtitle">
+                    Lo que aceptas al contratar el servicio, explicado de forma sencilla.
+                </p>
+                <span class="terms-updated text-mono" data-i18n="terms.updated">Última actualización: octubre de 2026</span>
+            </div>
+
+            <div class="terms-layout">
+                <aside class="terms-index" aria-label="Índice de términos">
+                    <h4 class="terms-index-title" data-i18n="terms.indexTitle">Contenido</h4>
+                    <ol class="terms-index-list">
+                        <li><a href="#terminos-1" class="terms-index-link" data-i18n="terms.c1.title">Aceptación de los términos</a></li>
+                        <li><a href="#terminos-2" class="terms-index-link" data-i18n="terms.c2.title">Descripción del servicio</a></li>
+                        <li><a href="#terminos-3" class="terms-index-link" data-i18n="terms.c3.title">Planes, pagos y facturación</a></li>
+                        <li><a href="#terminos-4" class="terms-index-link" data-i18n="terms.c4.title">Instalación y equipos</a></li>
+                        <li><a href="#terminos-5" class="terms-index-link" data-i18n="terms.c5.title">Uso de datos y privacidad</a></li>
+                        <li><a href="#terminos-6" class="terms-index-link" data-i18n="terms.c6.title">Responsabilidades de la galería</a></li>
+                        <li><a href="#terminos-7" class="terms-index-link" data-i18n="terms.c7.title">Limitación de responsabilidad</a></li>
+                        <li><a href="#terminos-8" class="terms-index-link" data-i18n="terms.c8.title">Cancelación y cambios</a></li>
+                    </ol>
+                </aside>
+
+                <div class="terms-body">
+                    <article class="terms-clause" id="terminos-1">
+                        <span class="terms-number">01</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c1.title">Aceptación de los términos</h3>
+                            <p data-i18n="terms.c1.text">Al contratar o usar StorePulse (la plataforma web, la app móvil o los equipos instalados en tu galería) aceptas estos términos. Si contratas en nombre de una galería o empresa, declaras que tienes autorización para hacerlo.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-2">
+                        <span class="terms-number">02</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c2.title">Descripción del servicio</h3>
+                            <p data-i18n="terms.c2.text">StorePulse es un servicio de VanguardTech que vigila cada stand contra robos y humo, y mide el consumo de luz y agua de cada uno. Incluye los equipos instalados, la plataforma para ver la información y las alertas al celular, según el plan contratado.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-3">
+                        <span class="terms-number">03</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c3.title">Planes, pagos y facturación</h3>
+                            <p data-i18n="terms.c3.text">Los planes se pagan por adelantado, de forma mensual o anual, en soles. El precio depende del número de stands y del plan elegido. Si un pago se retrasa más de 15 días, podemos suspender el acceso a la plataforma hasta que se regularice; mientras tanto, los equipos siguen guardando la información.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-4">
+                        <span class="terms-number">04</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c4.title">Instalación y equipos</h3>
+                            <p data-i18n="terms.c4.text">Nuestro equipo técnico instala los medidores y sensores sin obras ni cortes de cableado. Los equipos son propiedad de VanguardTech mientras dure el servicio, salvo que se compren aparte. La galería se compromete a no manipularlos ni moverlos sin coordinarlo con soporte.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-5">
+                        <span class="terms-number">05</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c5.title">Uso de datos y privacidad</h3>
+                            <p><span data-i18n="terms.c5.text">Los datos de consumo y de alertas de tu galería te pertenecen. Los usamos solo para dar el servicio, generar los recibos y mejorar el sistema, y nunca los vendemos a terceros. Los tratamos según la Ley N.° 29733 de Protección de Datos Personales del Perú. Más detalle en nuestra</span> <a href="public/sections/privacy.html" data-i18n="terms.c5.link">Política de Privacidad</a>.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-6">
+                        <span class="terms-number">06</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c6.title">Responsabilidades de la galería</h3>
+                            <p data-i18n="terms.c6.text">La administración fija las tarifas de luz y agua que se aplican a cada stand y es responsable de que sean correctas. También debe mantener la conexión a internet y a la red eléctrica de la galería, y avisar a soporte si un equipo se daña.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-7">
+                        <span class="terms-number">07</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c7.title">Limitación de responsabilidad</h3>
+                            <p data-i18n="terms.c7.text">StorePulse ayuda a prevenir y a detectar a tiempo, pero no reemplaza a los bomberos, a la policía ni al personal de seguridad. VanguardTech no responde por pérdidas causadas por cortes prolongados, daños intencionales a los equipos o fallas de servicios de terceros, como el internet o la telefonía.</p>
+                        </div>
+                    </article>
+
+                    <article class="terms-clause" id="terminos-8">
+                        <span class="terms-number">08</span>
+                        <div class="terms-clause-content">
+                            <h3 data-i18n="terms.c8.title">Cancelación y cambios</h3>
+                            <p data-i18n="terms.c8.text">Puedes cancelar tu plan cuando quieras, avisando con 30 días de anticipación; al terminar retiramos los equipos y puedes descargar tu historial. Si cambiamos estos términos, te avisaremos por correo antes de que entren en vigor. Estos términos se rigen por las leyes del Perú.</p>
+                        </div>
+                    </article>
+
+                    <p class="terms-contact"><span data-i18n="terms.contactPrefix">¿Tienes dudas sobre estos términos?</span> <a href="#contacto" data-i18n="terms.contactLink">Escríbenos</a> <span data-i18n="terms.contactSuffix">y te respondemos en menos de 24 horas.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
 <!-- ========================================================================= -->
-<!-- 10. FOOTER / PIE DE PÁGINA (VS-08, VS-09)                                  -->
+<!-- 12. FOOTER                                                                -->
 <!-- ========================================================================= -->
 <footer class="footer">
     <div class="container footer-grid">
@@ -730,7 +830,7 @@
             <h4 class="footer-heading" data-i18n="footer.access">Acceso</h4>
             <ul class="footer-links">
                 <li><a href="https://storepulse-web-app.firebaseapp.com/iam/sign-in?returnUrl=%2Fdashboard" target="_blank" rel="noopener noreferrer" data-i18n="footer.webAccess">Acceso a Plataforma Web</a></li>
-                <li><a href="#contacto" data-i18n="footer.mobileApp">Descargar App Móvil (Próximamente)</a></li>
+                <li><a href="#contacto" data-i18n="footer.mobileApp">App Móvil (Android)</a></li>
                 <li><a href="#contacto" data-i18n="footer.support">Soporte Técnico</a></li>
                 <li><a href="#faq" data-i18n="footer.faq">Preguntas Frecuentes</a></li>
             </ul>
@@ -739,10 +839,10 @@
         <div class="footer-col">
             <h4 class="footer-heading" data-i18n="footer.legal">Legal</h4>
             <ul class="footer-links">
-                <li><a href="public/sections/terms.html" data-i18n="footer.terms">Términos de Servicio (VS-08)</a></li>
-                <li><a href="public/sections/privacy.html" data-i18n="footer.privacy">Política de Privacidad (VS-09)</a></li>
-                <li><a href="#" data-i18n="footer.iotSecurity">Declaración de Seguridad IoT</a></li>
-                <li><a href="#" data-i18n="footer.license">Licencia de Software</a></li>
+                <li><a href="#terminos" data-i18n="footer.terms">Términos y Condiciones</a></li>
+                <li><a href="public/sections/privacy.html" data-i18n="footer.privacy">Política de Privacidad</a></li>
+                <li><a href="#terminos-5" data-i18n="footer.iotSecurity">Seguridad de tus datos</a></li>
+                <li><a href="#terminos" data-i18n="footer.license">Licencia de Software</a></li>
             </ul>
         </div>
     </div>
@@ -755,7 +855,7 @@
     </div>
 </footer>
 
-<!-- Traducciones (deben cargarse antes del motor i18n y de main.js) -->
+<!-- Translations (must load before the i18n engine and main.js) -->
 <script src="public/assets/scripts/translations/es.js"></script>
 <script src="public/assets/scripts/translations/en.js"></script>
 <script src="public/assets/scripts/i18n.js"></script>
